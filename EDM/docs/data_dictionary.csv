@@ -1,0 +1,51 @@
+domain,element,business_definition,technical_type,source_and_lineage,owner,sensitivity,quality_rule
+Date,date_key,Surrogate calendar key,INTEGER,Derived from ISO date,Finance data owner,Internal,Unique and matches YYYYMMDD
+Date,calendar_date,Calendar date at transaction grain,DATE,Source transaction date after parse,Finance data owner,Internal,Required and valid calendar day
+Date,month_key,Calendar month key,INTEGER,Derived YYYYMM,Finance data owner,Internal,Matches calendar_date
+Date,calendar_year,Calendar year,SMALLINT,Derived from calendar_date,Finance data owner,Internal,Within approved reporting range
+Date,calendar_month,Calendar month number,SMALLINT,Derived from calendar_date,Finance data owner,Internal,Between 1 and 12
+Customer,customer_key,Warehouse version key,BIGINT,MDM crosswalk into dim_customer,Customer data owner,Confidential,Unique per version
+Customer,customer_id,Enterprise customer identifier,TEXT,MDM golden record from source-system IDs,Customer data owner,Confidential,Unique among current records
+Customer,source_customer_id,Identifier assigned by a source system,TEXT,POS CRM e-commerce loyalty crosswalk,Customer data steward,Confidential,Unique within source system
+Customer,full_name,Customer display name,TEXT,Survivorship from CRM and verified source evidence,Customer data steward,Confidential,Trimmed non-empty when known
+Customer,phone,Customer contact number,TEXT,Normalized source phone,Customer data steward,Restricted,E.164 +256 format or null
+Customer,email,Customer contact address,TEXT,Normalized lower-case source email,Customer data steward,Restricted,Valid syntax or null; analyst role denied
+Customer,district,Customer home district,TEXT,Standardized source district,Customer data steward,Confidential,Controlled district list
+Customer,consent_status,Permission state by purpose,TEXT,Consent ledger / source event,Privacy owner,Restricted,Purpose and timestamp required for consent reliance
+Customer,segment,Approved analytical grouping,TEXT,Derived from approved activity rules,Analytics lead,Internal,Versioned rule; no protected-trait proxy
+Customer,valid_from,Start of dimension version,TIMESTAMPTZ,Warehouse SCD2 load,Data engineer role,Internal,Less than valid_to
+Customer,valid_to,End of dimension version,TIMESTAMPTZ,Warehouse SCD2 load,Data engineer role,Internal,Null only for current version
+Customer,is_current,Current golden-record version flag,BOOLEAN,Warehouse SCD2 load,Data engineer role,Internal,One current row per customer ID
+Customer,source_system,Source platform assigned to source ID,TEXT,Source registry and MDM crosswalk,Customer data steward,Internal,Controlled source registry
+Customer,source_customer_id,Identifier as received from a source,TEXT,Customer crosswalk,Customer data steward,Confidential,Unique with source_system and retained for reversal
+Customer,enterprise_customer_id,Golden customer ID assigned by MDM,TEXT,Customer crosswalk,Customer data owner,Confidential,Must resolve to a current golden record
+Customer,match_rule,Rule that linked a source row,TEXT,MDM matching decision log,Customer data steward,Internal,Controlled deterministic or reviewed rule
+Customer,match_status,Current status of a source link,TEXT,MDM crosswalk,Customer data steward,Internal,Golden alias pending review or separated
+Product,product_key,Warehouse product version key,BIGINT,MDM product mapping,Product data owner,Internal,Unique per version
+Product,product_id,Enterprise product identifier,TEXT,Product master crosswalk,Product data steward,Internal,Unique among current records
+Product,sku,Canonical stock keeping unit,TEXT,Selected authoritative source code,Product data steward,Internal,Unique per enterprise product and source context
+Product,product_name,Approved product label,TEXT,Survivorship from ERP/product owner,Product data steward,Internal,Required and trimmed
+Product,category,Approved reporting category,TEXT,Controlled taxonomy lookup,Product data steward,Internal,Foreign key to approved taxonomy
+Product,unit,Canonical base measure,TEXT,Standardized from source unit,Product data steward,Internal,Controlled unit with conversion rule
+Product,supplier_id,Enterprise supplier identifier,TEXT,Supplier master crosswalk,Procurement owner,Confidential,Must resolve to active supplier
+Product,source_sku,SKU received from the source system,TEXT,Product crosswalk,Product data steward,Internal,Retain unchanged as source evidence
+Product,sku_status,Stewardship status of source SKU,TEXT,Product crosswalk,Product data steward,Internal,Colliding codes remain under review
+Product,source_product_id,Identifier as received from source,TEXT,Product crosswalk,Product data steward,Internal,Unique with source_system; never discarded
+Store,store_key,Warehouse store version key,BIGINT,Store master SCD2,Retail operations owner,Internal,Unique per version
+Store,store_id,Enterprise store identifier,TEXT,POS/Odoo location crosswalk,Retail operations owner,Internal,Unique among current locations
+Store,district,Store operating district,TEXT,Store master,Retail operations owner,Internal,Controlled Uganda district / digital label
+Payment,payment_key,Payment method dimension key,BIGINT,Payment reference normalization,Finance owner,Internal,Unique
+Payment,payment_method,Method used for settlement,TEXT,POS/online source mapping,Finance owner,Internal,Controlled payment method list
+Payment,provider,Mobile money or card provider,TEXT,Payment source mapping,Finance owner,Confidential,Controlled provider list
+Payment,currency_code,ISO 4217 source currency,CHAR(3),Source currency normalization,Finance owner,Internal,Must be UGX KES or RWF
+Sales,sales_key,Warehouse transaction-line surrogate,BIGINT,ETL-generated fact key,Data platform owner,Internal,Unique
+Sales,source_transaction_id,Source transaction line identifier,TEXT,Source system transaction key,Finance owner,Internal,Unique with source system
+Sales,quantity,Signed item quantity,"NUMERIC(12,3)",Source quantity with negative returns retained,Finance owner,Internal,Non-zero; negative value means return
+Sales,unit_price,Source unit price,"NUMERIC(14,2)",Source price after numeric parse,Finance owner,Internal,Non-negative and source currency recorded
+Sales,amount_ugx,Converted signed transaction amount,"NUMERIC(16,2)",Quantity x unit price x approved dated FX rate,Finance owner,Internal,Reconciles to source within tolerance
+Sales,payment_reference,Processor reconciliation token,TEXT,Source payment reference,Finance owner,Restricted,Null only with missing-reference flag
+Sales,source_system,Originating transactional source,TEXT,ETL source metadata,Data platform owner,Internal,Controlled source registry
+Inventory,book_quantity,Quantity expected in system,"NUMERIC(12,3)",ERP stock ledger,Inventory owner,Internal,Non-negative except approved adjustments
+Inventory,counted_quantity,Physical count quantity,"NUMERIC(12,3)",Approved cycle-count app,Inventory owner,Confidential,Count timestamp and counter required
+Footfall,entry_count,Aggregated anonymous entry events,INTEGER,Edge sensor aggregation,Store operations owner,Internal,Non-negative; no face or device identifiers
+Footfall,consent_basis,Notice and purpose reference,TEXT,Approved signage / privacy notice,Privacy owner,Internal,Required before sensor use

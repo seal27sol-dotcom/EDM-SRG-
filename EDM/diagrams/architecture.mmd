@@ -1,0 +1,15 @@
+flowchart LR
+  POS[MySQL POS] --> OUTBOX[Encrypted local outbox]
+  WEB[PostgreSQL e-commerce] --> HUB[Managed integration hub]
+  LOY[Loyalty cloud DB] --> HUB
+  ERP[Odoo inventory] --> HUB
+  PAY[MTN and Airtel exports] --> HUB
+  CRM[CRM SaaS] --> HUB
+
+  OUTBOX --> HUB
+  HUB --> MDM[Coexistence MDM]
+  MDM --> WH[Warehouse]
+  WH --> BI[Board dashboard]
+  SEC[Security controls] -. governs .-> HUB
+  SEC -. governs .-> MDM
+  SEC -. governs .-> WH

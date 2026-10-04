@@ -1,0 +1,2102 @@
+[
+  {
+    "event_id": "F0001",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T13:15:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0002",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T17:46:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0003",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T19:39:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0004",
+    "store_id": "ST18",
+    "event_time": "2025-06-30T11:26:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0005",
+    "store_id": "ST13",
+    "event_time": "2025-06-30T13:17:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0006",
+    "store_id": "ST20",
+    "event_time": "2025-06-30T20:11:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0007",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T18:28:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0008",
+    "store_id": "ST14",
+    "event_time": "2025-06-30T16:27:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0009",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T10:19:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0010",
+    "store_id": "ST03",
+    "event_time": "2025-06-30T19:32:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0011",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T15:19:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0012",
+    "store_id": "ST10",
+    "event_time": "2025-06-30T12:24:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0013",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T19:44:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0014",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T14:56:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0015",
+    "store_id": "ST23",
+    "event_time": "2025-06-30T11:33:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0016",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T19:57:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0017",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T08:46:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0018",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T13:45:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0019",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T09:20:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0020",
+    "store_id": "ST03",
+    "event_time": "2025-06-30T08:49:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0021",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T10:32:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0022",
+    "store_id": "ST23",
+    "event_time": "2025-06-30T17:24:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0023",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T10:14:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0024",
+    "store_id": "ST19",
+    "event_time": "2025-06-30T16:28:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0025",
+    "store_id": "ST11",
+    "event_time": "2025-06-30T19:51:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0026",
+    "store_id": "ST07",
+    "event_time": "2025-06-30T18:54:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0027",
+    "store_id": "ST19",
+    "event_time": "2025-06-30T19:06:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0028",
+    "store_id": "ST20",
+    "event_time": "2025-06-30T18:53:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0029",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T10:51:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0030",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T12:18:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0031",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T16:56:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0032",
+    "store_id": "ST19",
+    "event_time": "2025-06-30T19:10:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0033",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T20:49:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0034",
+    "store_id": "ST05",
+    "event_time": "2025-06-30T11:55:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0035",
+    "store_id": "ST13",
+    "event_time": "2025-06-30T11:35:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0036",
+    "store_id": "ST07",
+    "event_time": "2025-06-30T10:47:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0037",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T20:40:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0038",
+    "store_id": "ST10",
+    "event_time": "2025-06-30T18:39:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0039",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T13:12:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0040",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T10:18:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0041",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T09:01:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0042",
+    "store_id": "ST19",
+    "event_time": "2025-06-30T10:39:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0043",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T16:17:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0044",
+    "store_id": "ST07",
+    "event_time": "2025-06-30T14:36:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0045",
+    "store_id": "ST14",
+    "event_time": "2025-06-30T08:57:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0046",
+    "store_id": "ST13",
+    "event_time": "2025-06-30T17:34:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0047",
+    "store_id": "ST11",
+    "event_time": "2025-06-30T09:58:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0048",
+    "store_id": "ST19",
+    "event_time": "2025-06-30T12:29:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0049",
+    "store_id": "ST07",
+    "event_time": "2025-06-30T10:50:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0050",
+    "store_id": "ST10",
+    "event_time": "2025-06-30T16:56:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0051",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T13:55:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0052",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T20:44:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0053",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T10:19:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0054",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T08:04:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0055",
+    "store_id": "ST18",
+    "event_time": "2025-06-30T16:57:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0056",
+    "store_id": "ST13",
+    "event_time": "2025-06-30T12:36:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0057",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T16:28:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0058",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T08:44:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0059",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T16:58:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0060",
+    "store_id": "ST14",
+    "event_time": "2025-06-30T12:37:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0061",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T19:28:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0062",
+    "store_id": "ST10",
+    "event_time": "2025-06-30T15:30:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0063",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T20:26:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0064",
+    "store_id": "ST16",
+    "event_time": "2025-06-30T09:21:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0065",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T10:28:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0066",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T19:16:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0067",
+    "store_id": "ST21",
+    "event_time": "2025-06-30T16:05:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0068",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T16:34:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0069",
+    "store_id": "ST20",
+    "event_time": "2025-06-30T09:20:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0070",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T16:03:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0071",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T12:20:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0072",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T10:25:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0073",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T14:01:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0074",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T17:44:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0075",
+    "store_id": "ST21",
+    "event_time": "2025-06-30T20:22:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0076",
+    "store_id": "ST05",
+    "event_time": "2025-06-30T12:11:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0077",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T13:36:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0078",
+    "store_id": "ST11",
+    "event_time": "2025-06-30T13:08:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0079",
+    "store_id": "ST16",
+    "event_time": "2025-06-30T18:39:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0080",
+    "store_id": "ST07",
+    "event_time": "2025-06-30T16:33:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0081",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T11:21:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0082",
+    "store_id": "ST18",
+    "event_time": "2025-06-30T20:51:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0083",
+    "store_id": "ST16",
+    "event_time": "2025-06-30T16:25:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0084",
+    "store_id": "ST20",
+    "event_time": "2025-06-30T20:18:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0085",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T19:23:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0086",
+    "store_id": "ST23",
+    "event_time": "2025-06-30T09:57:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0087",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T10:54:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0088",
+    "store_id": "ST22",
+    "event_time": "2025-06-30T17:17:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0089",
+    "store_id": "ST10",
+    "event_time": "2025-06-30T09:16:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0090",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T14:21:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0091",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T17:54:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0092",
+    "store_id": "ST13",
+    "event_time": "2025-06-30T11:49:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0093",
+    "store_id": "ST10",
+    "event_time": "2025-06-30T19:02:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0094",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T20:33:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0095",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T13:06:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0096",
+    "store_id": "ST19",
+    "event_time": "2025-06-30T10:27:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0097",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T09:39:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0098",
+    "store_id": "ST18",
+    "event_time": "2025-06-30T17:25:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0099",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T19:13:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0100",
+    "store_id": "ST13",
+    "event_time": "2025-06-30T14:25:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0101",
+    "store_id": "ST23",
+    "event_time": "2025-06-30T10:15:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0102",
+    "store_id": "ST13",
+    "event_time": "2025-06-30T14:23:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0103",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T10:43:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0104",
+    "store_id": "ST23",
+    "event_time": "2025-06-30T10:40:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0105",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T13:44:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0106",
+    "store_id": "ST11",
+    "event_time": "2025-06-30T13:09:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0107",
+    "store_id": "ST20",
+    "event_time": "2025-06-30T18:22:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0108",
+    "store_id": "ST16",
+    "event_time": "2025-06-30T13:11:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0109",
+    "store_id": "ST09",
+    "event_time": "2025-06-30T12:36:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0110",
+    "store_id": "ST03",
+    "event_time": "2025-06-30T13:00:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0111",
+    "store_id": "ST09",
+    "event_time": "2025-06-30T19:48:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0112",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T11:33:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0113",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T08:45:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0114",
+    "store_id": "ST22",
+    "event_time": "2025-06-30T19:22:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0115",
+    "store_id": "ST14",
+    "event_time": "2025-06-30T08:13:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0116",
+    "store_id": "ST14",
+    "event_time": "2025-06-30T13:34:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0117",
+    "store_id": "ST14",
+    "event_time": "2025-06-30T13:14:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0118",
+    "store_id": "ST11",
+    "event_time": "2025-06-30T11:46:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0119",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T20:15:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0120",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T19:51:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0121",
+    "store_id": "ST19",
+    "event_time": "2025-06-30T20:38:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0122",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T10:55:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0123",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T17:39:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0124",
+    "store_id": "ST22",
+    "event_time": "2025-06-30T18:23:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0125",
+    "store_id": "ST13",
+    "event_time": "2025-06-30T17:49:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0126",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T14:04:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0127",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T18:26:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0128",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T11:20:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0129",
+    "store_id": "ST23",
+    "event_time": "2025-06-30T19:15:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0130",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T16:48:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0131",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T13:03:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0132",
+    "store_id": "ST11",
+    "event_time": "2025-06-30T13:11:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0133",
+    "store_id": "ST20",
+    "event_time": "2025-06-30T12:08:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0134",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T08:16:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0135",
+    "store_id": "ST21",
+    "event_time": "2025-06-30T14:49:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0136",
+    "store_id": "ST07",
+    "event_time": "2025-06-30T13:07:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0137",
+    "store_id": "ST09",
+    "event_time": "2025-06-30T08:30:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0138",
+    "store_id": "ST23",
+    "event_time": "2025-06-30T14:07:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0139",
+    "store_id": "ST19",
+    "event_time": "2025-06-30T14:13:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0140",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T08:54:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0141",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T12:33:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0142",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T12:28:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0143",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T15:53:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0144",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T17:09:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0145",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T09:10:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0146",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T09:17:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0147",
+    "store_id": "ST16",
+    "event_time": "2025-06-30T08:30:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0148",
+    "store_id": "ST03",
+    "event_time": "2025-06-30T10:37:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0149",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T09:11:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0150",
+    "store_id": "ST20",
+    "event_time": "2025-06-30T15:15:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0151",
+    "store_id": "ST18",
+    "event_time": "2025-06-30T16:49:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0152",
+    "store_id": "ST14",
+    "event_time": "2025-06-30T08:01:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0153",
+    "store_id": "ST19",
+    "event_time": "2025-06-30T12:29:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0154",
+    "store_id": "ST23",
+    "event_time": "2025-06-30T09:48:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0155",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T20:48:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0156",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T15:10:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0157",
+    "store_id": "ST10",
+    "event_time": "2025-06-30T20:17:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0158",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T13:19:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0159",
+    "store_id": "ST19",
+    "event_time": "2025-06-30T14:45:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0160",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T18:48:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0161",
+    "store_id": "ST16",
+    "event_time": "2025-06-30T20:07:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0162",
+    "store_id": "ST16",
+    "event_time": "2025-06-30T08:50:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0163",
+    "store_id": "ST09",
+    "event_time": "2025-06-30T16:08:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0164",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T17:05:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0165",
+    "store_id": "ST11",
+    "event_time": "2025-06-30T08:47:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0166",
+    "store_id": "ST14",
+    "event_time": "2025-06-30T17:25:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0167",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T19:49:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0168",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T15:01:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0169",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T18:51:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0170",
+    "store_id": "ST09",
+    "event_time": "2025-06-30T16:36:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0171",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T19:45:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0172",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T10:25:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0173",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T15:18:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0174",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T12:22:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0175",
+    "store_id": "ST23",
+    "event_time": "2025-06-30T15:19:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0176",
+    "store_id": "ST20",
+    "event_time": "2025-06-30T11:02:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0177",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T20:33:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0178",
+    "store_id": "ST22",
+    "event_time": "2025-06-30T15:00:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0179",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T13:55:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0180",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T09:32:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0181",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T12:09:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0182",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T11:31:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0183",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T11:14:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0184",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T12:46:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0185",
+    "store_id": "ST07",
+    "event_time": "2025-06-30T16:30:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0186",
+    "store_id": "ST16",
+    "event_time": "2025-06-30T11:04:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0187",
+    "store_id": "ST18",
+    "event_time": "2025-06-30T13:32:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0188",
+    "store_id": "ST21",
+    "event_time": "2025-06-30T20:33:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0189",
+    "store_id": "ST13",
+    "event_time": "2025-06-30T14:44:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0190",
+    "store_id": "ST10",
+    "event_time": "2025-06-30T15:03:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0191",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T09:07:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0192",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T11:07:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0193",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T20:02:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0194",
+    "store_id": "ST11",
+    "event_time": "2025-06-30T10:51:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0195",
+    "store_id": "ST03",
+    "event_time": "2025-06-30T13:53:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0196",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T18:45:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0197",
+    "store_id": "ST09",
+    "event_time": "2025-06-30T12:50:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0198",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T15:26:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0199",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T09:53:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0200",
+    "store_id": "ST22",
+    "event_time": "2025-06-30T10:50:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0201",
+    "store_id": "ST23",
+    "event_time": "2025-06-30T14:06:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0202",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T20:28:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0203",
+    "store_id": "ST18",
+    "event_time": "2025-06-30T20:36:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0204",
+    "store_id": "ST10",
+    "event_time": "2025-06-30T12:20:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0205",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T10:41:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0206",
+    "store_id": "ST03",
+    "event_time": "2025-06-30T19:05:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0207",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T14:27:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0208",
+    "store_id": "ST05",
+    "event_time": "2025-06-30T19:58:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0209",
+    "store_id": "ST05",
+    "event_time": "2025-06-30T14:18:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0210",
+    "store_id": "ST03",
+    "event_time": "2025-06-30T15:24:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0211",
+    "store_id": "ST05",
+    "event_time": "2025-06-30T10:44:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0212",
+    "store_id": "ST16",
+    "event_time": "2025-06-30T17:46:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0213",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T13:49:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0214",
+    "store_id": "ST14",
+    "event_time": "2025-06-30T13:39:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0215",
+    "store_id": "ST09",
+    "event_time": "2025-06-30T08:24:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0216",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T10:02:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0217",
+    "store_id": "ST16",
+    "event_time": "2025-06-30T09:55:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0218",
+    "store_id": "ST21",
+    "event_time": "2025-06-30T09:28:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0219",
+    "store_id": "ST13",
+    "event_time": "2025-06-30T08:18:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0220",
+    "store_id": "ST20",
+    "event_time": "2025-06-30T09:16:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0221",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T11:10:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0222",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T12:36:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0223",
+    "store_id": "ST07",
+    "event_time": "2025-06-30T19:14:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0224",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T15:03:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0225",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T20:10:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0226",
+    "store_id": "ST11",
+    "event_time": "2025-06-30T09:41:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0227",
+    "store_id": "ST10",
+    "event_time": "2025-06-30T15:20:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0228",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T11:10:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0229",
+    "store_id": "ST13",
+    "event_time": "2025-06-30T11:25:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0230",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T15:01:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0231",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T14:42:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0232",
+    "store_id": "ST16",
+    "event_time": "2025-06-30T15:20:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0233",
+    "store_id": "ST14",
+    "event_time": "2025-06-30T12:18:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0234",
+    "store_id": "ST22",
+    "event_time": "2025-06-30T14:26:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0235",
+    "store_id": "ST13",
+    "event_time": "2025-06-30T19:13:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0236",
+    "store_id": "ST03",
+    "event_time": "2025-06-30T20:22:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0237",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T12:32:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0238",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T09:42:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0239",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T16:37:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0240",
+    "store_id": "ST13",
+    "event_time": "2025-06-30T11:43:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0241",
+    "store_id": "ST05",
+    "event_time": "2025-06-30T16:57:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0242",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T16:50:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0243",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T14:24:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0244",
+    "store_id": "ST10",
+    "event_time": "2025-06-30T09:27:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0245",
+    "store_id": "ST22",
+    "event_time": "2025-06-30T13:25:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0246",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T19:53:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0247",
+    "store_id": "ST21",
+    "event_time": "2025-06-30T08:29:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0248",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T11:37:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0249",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T10:04:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0250",
+    "store_id": "ST20",
+    "event_time": "2025-06-30T19:33:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0251",
+    "store_id": "ST14",
+    "event_time": "2025-06-30T10:13:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0252",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T18:19:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0253",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T10:05:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0254",
+    "store_id": "ST20",
+    "event_time": "2025-06-30T12:17:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0255",
+    "store_id": "ST03",
+    "event_time": "2025-06-30T09:19:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0256",
+    "store_id": "ST11",
+    "event_time": "2025-06-30T13:37:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0257",
+    "store_id": "ST23",
+    "event_time": "2025-06-30T20:41:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0258",
+    "store_id": "ST22",
+    "event_time": "2025-06-30T09:25:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0259",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T09:49:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0260",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T11:53:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0261",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T16:00:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0262",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T14:10:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0263",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T12:45:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0264",
+    "store_id": "ST23",
+    "event_time": "2025-06-30T19:16:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0265",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T16:32:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0266",
+    "store_id": "ST22",
+    "event_time": "2025-06-30T10:39:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0267",
+    "store_id": "ST02",
+    "event_time": "2025-06-30T10:53:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0268",
+    "store_id": "ST16",
+    "event_time": "2025-06-30T11:17:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0269",
+    "store_id": "ST09",
+    "event_time": "2025-06-30T18:58:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0270",
+    "store_id": "ST18",
+    "event_time": "2025-06-30T18:09:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0271",
+    "store_id": "ST21",
+    "event_time": "2025-06-30T14:53:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0272",
+    "store_id": "ST05",
+    "event_time": "2025-06-30T14:49:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0273",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T10:01:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0274",
+    "store_id": "ST05",
+    "event_time": "2025-06-30T15:01:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0275",
+    "store_id": "ST14",
+    "event_time": "2025-06-30T20:21:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0276",
+    "store_id": "ST17",
+    "event_time": "2025-06-30T18:26:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0277",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T17:02:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0278",
+    "store_id": "ST03",
+    "event_time": "2025-06-30T17:50:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0279",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T15:44:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0280",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T11:39:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0281",
+    "store_id": "ST11",
+    "event_time": "2025-06-30T20:28:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0282",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T11:28:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0283",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T19:02:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0284",
+    "store_id": "ST23",
+    "event_time": "2025-06-30T16:07:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0285",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T16:59:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0286",
+    "store_id": "ST11",
+    "event_time": "2025-06-30T12:29:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0287",
+    "store_id": "ST04",
+    "event_time": "2025-06-30T16:38:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0288",
+    "store_id": "ST10",
+    "event_time": "2025-06-30T09:12:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0289",
+    "store_id": "ST18",
+    "event_time": "2025-06-30T20:19:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0290",
+    "store_id": "ST12",
+    "event_time": "2025-06-30T09:24:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0291",
+    "store_id": "ST13",
+    "event_time": "2025-06-30T12:17:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0292",
+    "store_id": "ST14",
+    "event_time": "2025-06-30T20:00:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0293",
+    "store_id": "ST06",
+    "event_time": "2025-06-30T08:51:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0294",
+    "store_id": "ST09",
+    "event_time": "2025-06-30T12:03:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0295",
+    "store_id": "ST10",
+    "event_time": "2025-06-30T15:15:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0296",
+    "store_id": "ST08",
+    "event_time": "2025-06-30T11:11:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0297",
+    "store_id": "ST11",
+    "event_time": "2025-06-30T14:37:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0298",
+    "store_id": "ST16",
+    "event_time": "2025-06-30T11:25:00Z",
+    "event_type": "exit",
+    "count": 1
+  },
+  {
+    "event_id": "F0299",
+    "store_id": "ST15",
+    "event_time": "2025-06-30T19:04:00Z",
+    "event_type": "entry",
+    "count": 1
+  },
+  {
+    "event_id": "F0300",
+    "store_id": "ST01",
+    "event_time": "2025-06-30T18:58:00Z",
+    "event_type": "entry",
+    "count": 1
+  }
+]

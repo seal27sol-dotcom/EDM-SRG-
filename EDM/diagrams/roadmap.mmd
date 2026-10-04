@@ -1,0 +1,19 @@
+flowchart LR
+  start([Governance reset]) --> p1[Phase 1: Stabilize and govern]
+  p1 --> g1{Ready for quick wins?}
+  g1 --> p2[Phase 2: Visible quick wins]
+  g1 --> stop1([Pause and fix root cause])
+
+  p2 --> g2{Can reporting be trusted?}
+  g2 --> p3[Phase 3: Integrate and master]
+  g2 --> stop2([Pause and review quality])
+
+  p3 --> g3{Data quality and access approved?}
+  g3 --> p4[Phase 4: Assure and audit]
+  g3 --> stop3([Pause for remediation])
+
+  p4 --> g4{Business risk acceptable?}
+  g4 --> p5[Phase 5: Scale selectively]
+  g4 --> stop4([Hold scale until controls pass])
+
+  p5 --> outcome([Board-ready EDM capability])

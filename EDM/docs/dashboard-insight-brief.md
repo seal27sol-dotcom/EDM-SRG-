@@ -1,0 +1,11 @@
+# Executive Insight Brief | Demonstration Only
+
+**Scope:** deterministic synthetic records, 60,000 transaction lines, Jan-Jun 2025. Not actual SRG operating results. Values are computed from the generated data; KES and RWF are converted using fixed illustrative planning assumptions in the data pipeline, not dated accounting FX rates.
+
+1. **Sales are distributed across categories in this simulation.** No single category dominates the six-month aggregate. Action: use the category and store filters to ask whether local assortments should differ, then validate with actual margin, stock-on-hand, promotion, and supplier lead-time data before changing range plans.
+2. **Store totals differ, but absolute sales alone do not measure store performance.** The synthetic extract has no store capacity, opening hours, footfall calibration, local stock availability, or comparable store-age controls. Action: combine sales with inventory snapshots and store operating context; do not rank managers using this chart.
+3. **The demonstration exposes quality defects that block trusted reporting.** The exact-match customer duplicate-row metric falls from 22.62% to 0% after conservative normalization/deduplication; duplicate product SKUs fall from 4.92% to 0%. These are outcomes of the generated test data and specified match keys, not verified SRG results. Action: review candidate merges before production and preserve source crosswalks and reversibility.
+
+**Decisions this dashboard cannot support:** customer churn/growth, stock-out causality, 8.4% stock-variance root cause, margin/profitability, or mobile-money fraud. The demo file lacks reliable customer consent history, inventory snapshots, cost/margin, event-level payment timestamps, and provider settlement records. A dashboard should surface those evidence gaps rather than manufacture answers.
+
+**Critique:** a dual-axis sales-and-footfall chart was excluded because sensor count and transaction value have different units, coverage, and causal meaning; a high footfall count does not imply conversion or stock availability. The replacement is separate category/store views with explicit filters. Returns remain negative in net sales and are separately counted, rather than hidden in gross totals.

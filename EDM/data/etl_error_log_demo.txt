@@ -1,0 +1,5 @@
+2025-06-30 01:02:11 ERROR extract POS_ST03: connection timeout after 30s
+2025-06-30 01:02:42 WARN extract POS_ST03: retry 1/1 skipped
+2025-06-30 01:03:01 INFO load fact_sales: 59812 rows committed
+2025-06-30 01:03:04 ERROR dimension_product: duplicate key SKU-00142
+2025-06-30 01:03:07 ERROR job status: SUCCESS (partial load)

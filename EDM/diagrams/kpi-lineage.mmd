@@ -1,0 +1,9 @@
+flowchart LR
+  SRC[POS and app raw rows] --> LAND[Encrypted landing]
+  LAND --> CLEAN[Standardize dates and values]
+  CLEAN --> MATCH[Customer matching]
+  MATCH --> FACT[Fact sales]
+  FACT --> MEASURE[Monthly active customers]
+  MEASURE --> MODEL[Semantic model]
+  MODEL --> DASH[Dashboard KPI]
+  RULE[Exclude voids and returns] -. governs .-> MEASURE

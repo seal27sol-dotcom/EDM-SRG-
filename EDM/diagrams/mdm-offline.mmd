@@ -1,0 +1,13 @@
+flowchart TD
+  Store[Store POS] --> Provisional[Create provisional ID]
+  Provisional --> Local[Continue offline sale]
+  Local --> Edge[Encrypted local outbox]
+  Edge --> Hub[Retry idempotent upsert]
+  Hub --> MDM[Customer MDM]
+  MDM --> Check{High confidence and no conflict?}
+  Check -->|Yes| Map[Enterprise ID and crosswalk]
+  Check -->|No| Steward[Steward review queue]
+  Steward --> Decision{Approve merge?}
+  Decision -->|Yes| Map
+  Decision -->|No| Keep[Keep separate identities]
+  Map --> Update[Local cache updated on reconnect]

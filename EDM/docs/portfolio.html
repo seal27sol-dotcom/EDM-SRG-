@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Savanna | EDM Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#182722;--muted:#607168;--forest:#183b32;--teal:#26786e;--coral:#cb6e52;--line:#d9e1da;--paper:#f4f6f1;--surface:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:11pt/1.58 "Source Serif 4",Georgia,serif}
+.cover{padding:22mm 18mm 12mm;background:var(--forest);color:#f4f7ee;min-height:72mm;border-bottom:5px solid #c4e36a}
+.cover .overline{font:9pt "Manrope",sans-serif;letter-spacing:0;color:#c6d6c9;text-transform:uppercase}
+.cover h1{margin:12mm 0 3mm;font:700 32pt/1.12 "Manrope",sans-serif;color:#fff}
+.cover p{max-width:145mm;color:#d9e5db;font:12pt/1.5 "Manrope",sans-serif}
+.cover .meta{margin-top:14mm;font:9pt "Manrope",sans-serif;color:#b8cdc0}
+article{max-width:190mm;margin:12mm auto;padding:0 10mm 20mm;background:#fff}
+h1,h2,h3,h4{font-family:"Manrope",Arial,sans-serif;line-height:1.25;color:var(--forest);break-after:avoid}
+article h1{margin-top:15mm;font-size:22pt}article h2{margin-top:11mm;padding-bottom:2mm;border-bottom:1px solid var(--line);font-size:16pt}article h3{margin-top:7mm;font-size:12pt}p,li{orphans:3;widows:3}a{color:var(--teal);overflow-wrap:anywhere}
+blockquote{margin:5mm 0;padding:2mm 5mm;border-left:3px solid var(--coral);color:#46584e;background:#f6f8f4}
+table{width:100%;border-collapse:collapse;margin:4mm 0 7mm;font:8.5pt/1.4 "Manrope",Arial,sans-serif;break-inside:auto}
+th{background:#eaf1e8;color:var(--forest);text-align:left}th,td{padding:2.3mm;border:1px solid var(--line);vertical-align:top}tr{break-inside:avoid}
+code,pre{font-family:"DM Mono",Consolas,monospace;font-size:8pt}.diagram{margin:7mm 0;padding:4mm;border:1px solid var(--line);background:#fbfcf9;break-inside:avoid;overflow:visible}.diagram pre{white-space:pre-wrap}.diagram svg{max-width:100%;height:auto}figcaption{margin-top:2mm;color:var(--muted);font:8pt "Manrope",sans-serif;text-align:right;text-transform:uppercase}
+#toc{padding:4mm 6mm;background:#f1f5ef;border:1px solid var(--line)}
+@page{size:A4;margin:15mm 16mm 17mm;@bottom-right{content:"Project Savanna | " counter(page);font:8pt "Manrope",sans-serif;color:#718078}}
+@media print{body{background:#fff;font-size:10pt}.cover{break-after:page;min-height:0;padding:18mm}article{max-width:none;margin:0;padding:0}a{color:inherit;text-decoration:none}.diagram{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="cover"><div class="overline">Savanna Retail Group · Enterprise Data Management</div><h1>Project Savanna</h1><p>Data management turnaround · Consultancy portfolio draft</p><div class="meta">A1-D2 integrated capstone · Individual submission · October 2026</div></header>
+<article><h1 id="project-savanna-enterprise-data-management-turnaround">Project Savanna | Enterprise Data Management Turnaround</h1>
+<p><strong>Consultancy portfolio draft | Individual capstone | October 2026</strong></p>
+<h2 id="executive-summary">Executive Summary</h2>
+<p>Savanna Retail Group's difficulty is enterprise-wide: twenty-three separate POS databases, e-commerce, loyalty, CRM, Odoo inventory, HR spreadsheets, supplier workbooks, and manual mobile-money files do not share reliable identifiers, controls, or operating ownership. The documented effects are estimated 23% duplicate customer records, misallocated loyalty points, five identifiers for some products, 11 days of monthly manual reporting, 8.4% stock variance, uneven stock availability, unanswered customer-growth/churn questions, and a stolen unencrypted export involving 9,000 people that was escalated internally 11 days late with no breach notification.</p>
+<p>The recommended turnaround is a modest hub-and-spoke platform with store-edge buffering, coexistence MDM, governed batch integration, a PostgreSQL analytical warehouse, strong device/access controls, and a month-6 reporting quick win. The plan caps the full 18 months at UGX 480M because Task D1 names that envelope, even though the scenario also describes UGX 480M as an annual budget. It uses SRG's existing staff roles and defers broad streaming, expensive catalog software, and regional rollout until evidence justifies them.</p>
+<p><strong>Evidence boundary:</strong> The assignment PDF was the only provided input. All generated data, cleansed metrics, dashboard values, ETL error lines, and HR examples in this workspace are synthetic and labeled as such. They demonstrate a reproducible method; they do not verify SRG's actual data quality or root causes. The instructor datasets and Appendices A-E are not present. See <a href="registers.md#assumptions-register">Assumptions Register</a>.</p>
+<h3 id="extended-portfolio-framing-and-evidence-method">Extended portfolio framing and evidence method</h3>
+<p>This portfolio is written as a consultancy recommendation for an operational turnaround rather than a purely technical database repair. The evidence base is deliberately limited to the case brief, the synthetic demo dataset, and the governance artifacts created in this workspace. That limitation is important: it prevents unsupported claims about SRG's real customer records, product master, or breach response, while still enabling a credible consultant-style intervention plan. The real value of this submission is not in pretending to have the absent source files; it is in proving that the problem can be framed, prioritized, and resolved in a defensible governance structure using a repeatable data-management method.</p>
+<p>The portfolio therefore treats the business problem as an enterprise operating-model issue. Duplicate customer records are not only a data-cleansing problem but also a product-ownership, matching-control, and stewardship problem. The same logic applies to product identifiers, stock variance, delayed reporting, and finance/operations risk. A technical database fix alone would not resolve accountability gaps, poor retention controls, or the absence of a common data contract. The correct response is to establish standards, owners, quality gates, and integration controls so that defects are prevented rather than endlessly repaired after the fact.</p>
+<p>The recommended design follows a staged maturity model. During phase 1, the organization aligns owners, policies, and endpoint security. During phase 2, it proves a quick-win dashboard using cleansed, reconciled extracts. During phase 3, it introduces master-data governance and a warehouse. By phase 4, the platform is operationally assured and audited, and only then is wider rollout justified. That sequencing matters because SRG's immediate instability originates from shared process failure, not from a single missing database server or an isolated ETL bug.</p>
+<p>The project also demonstrates a disciplined approach to quality metrics and synthetic evidence. Measures such as duplicate row percentages and structural consistency are useful as demonstration indicators, but they are not treated as real empirical facts about the organization. Their purpose is to show how data-quality control should be measured in a portfolio or production setting. This distinction is especially important in a briefing where legal risk, privacy exposure, and customer rights are at the center of the operational concern.</p>
+<h3 id="tools-used">Tools used</h3>
+<ul>
+<li><strong>AI-assisted research, drafting, and coding support:</strong> ChatGPT, Kimi, Claude, GitHub Copilot, and Kiro. AI-generated suggestions were treated as assistance, not evidence; the author is responsible for checking claims, calculations, citations, and final wording against the case brief and referenced sources.</li>
+<li><strong>Development and source management:</strong> Visual Studio Code (VS Code) for editing and running project scripts; GitHub for repository and version-control work.</li>
+<li><strong>Business intelligence:</strong> Tableau was used in the BI workflow. The deliverables here are the browser-based dashboard and BI-ready CSV; a native Tableau workbook is not included.</li>
+<li><strong>Data preparation:</strong> Python scripts generate the synthetic demonstration data, profile and clean records, and mask the HR example. All resulting measures remain synthetic, as described in the evidence boundary above.</li>
+</ul>
+<h2 id="a1-edm-diagnostic-and-lifecycle">A1 | EDM Diagnostic and Lifecycle</h2>
+<h3 id="board-memo">Board memo</h3>
+<p><strong>To:</strong> SRG Board <strong>From:</strong> Enterprise Data Management Consultant <strong>Subject:</strong> Fix the data operating model, not only the databases</p>
+<p>Hiring two more DBAs may improve availability, backups, and query administration, but it does not create one trusted customer identity, govern five product identifiers, validate 14 supplier spreadsheets, define retention, prevent unencrypted exports, or reconcile mobile-money files. SRG's recurring issues cross systems, business processes, roles, and controls. The 11-day reporting delay is a coordination and integration process, not a single database outage. Wrong loyalty allocation is an identity and stewardship problem. The 8.4% inventory variance has no diagnosed cause and needs movement/count evidence, not an assumed database patch.</p>
+<p>Enterprise data management (EDM) establishes accountable ownership, common definitions and identifiers, quality rules, lifecycle controls, integration, protection, metadata and decision use across the enterprise. Traditional database administration manages individual database operations: availability, performance, backup, schema, and access within a system. DBAs remain necessary, but they cannot independently decide which system wins for a phone number, whether a local record can be merged, who approves deletion, or when the Board's KPI is trusted.</p>
+<p>The evidence points to a control chain: siloed systems and disconnected capture create inconsistent records; inconsistent identifiers make joins and reconciliation costly; manual spreadsheets delay decisions and hide lineage; absent or weak ownership allows defects to recur; endpoint and incident-control failures expose personal data. SRG should treat data as a managed business asset with named owners, measurable controls, and an evidence trail. Cleaning once without changing capture and synchronization merely resets the symptoms.</p>
+<p><strong>First 90 days:</strong> appoint existing data owners/stewards; inventory datasets and processing purposes; encrypt managed endpoints and constrain exports; baseline quality/reporting/stock measures; test a three-store offline-sync pilot; publish a governed first dashboard using reconciled batch extracts. Two additional DBAs alone are not the remedy.</p>
+<h3 id="customer-lifecycle-and-dama-dmbok">Customer lifecycle and DAMA-DMBOK</h3>
+<p>The lifecycle with systems, actors, and failure points is in <a href="../diagrams/customer-lifecycle.mmd">customer-lifecycle.mmd</a>. The principal failure points are no common ID at creation, insecure copies during storage/use, unclear purpose and access during sharing, no evidenced retention schedule, and unproven deletion across source systems and exports.</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+  POS[POS signup] --&gt; LOCAL[23 local POS databases]
+  APP[Loyalty app] --&gt; LDB[Loyalty database]
+  WEB[Checkout] --&gt; PG[Shop platform]
+  PAY[Mobile money link] --&gt; LOCAL
+
+  LOCAL --&gt; USE[Service and reporting]
+  LDB --&gt; USE
+  PG --&gt; USE
+
+  USE --&gt; SHARE[Shared data with partners]
+  SHARE --&gt; ARCHIVE[Restricted archive]
+  ARCHIVE --&gt; DELETE[Verified deletion]
+
+  LOCAL -. no common ID .-&gt; E1[Duplicate records]
+  USE -. weak access .-&gt; E2[Data leak risk]
+  USE -. poor purpose controls .-&gt; E3[Manual joins]
+  SHARE -. vendor controls unclear .-&gt; E4[Cross border concern]
+  ARCHIVE -. missing retention .-&gt; E5[Deletion gap]
+</pre><figcaption>Customer Lifecycle</figcaption></figure>
+
+<table>
+<thead>
+<tr>
+<th>DAMA-DMBOK area</th>
+<th>SRG evidence and maturity judgment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data governance</td>
+<td>Owners, standards, and decision rights are not evidenced; recurring defects indicate weak accountability.</td>
+</tr>
+<tr>
+<td>Data architecture</td>
+<td>Siloed systems and disconnected stores; an enterprise target model is not evidenced.</td>
+</tr>
+<tr>
+<td>Data modeling/design</td>
+<td>Five product identifiers and customer duplicates show no consistent cross-system model.</td>
+</tr>
+<tr>
+<td>Data storage/operations</td>
+<td>23 POS databases plus cloud/SaaS and HQ Odoo; local reliability needs explicit design.</td>
+</tr>
+<tr>
+<td>Data security</td>
+<td>Unencrypted stolen laptop, delayed incident reporting, and no breach notice are direct control failures.</td>
+</tr>
+<tr>
+<td>Data integration/interoperability</td>
+<td>Manual reporting/reconciliation and 11-day delay show weak integration.</td>
+</tr>
+<tr>
+<td>Document/content management</td>
+<td>14 supplier workbooks and HR spreadsheets lack controlled document lifecycle evidence.</td>
+</tr>
+<tr>
+<td>Reference/master data</td>
+<td>Customer and product identifiers conflict; enterprise MDM is not evidenced.</td>
+</tr>
+<tr>
+<td>Data warehousing/BI</td>
+<td>Board cannot answer segment questions; reporting is manual.</td>
+</tr>
+<tr>
+<td>Metadata</td>
+<td>Definitions, lineage, and discovery are not evidenced; C1 supplies a minimum catalog design.</td>
+</tr>
+<tr>
+<td>Data quality</td>
+<td>Duplicate, missing, inconsistent, invalid, and stock-variance symptoms are explicit.</td>
+</tr>
+<tr>
+<td>Data ethics</td>
+<td>Purpose, loyalty consent, matching harms, and footfall notice require explicit safeguards.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a2-governance-and-compliance">A2 | Governance and Compliance</h2>
+<p>The operating charter, existing-role structure, 15-activity RACI, three enforceable policies, prioritized legal register, risk register, and DPIA draft are in <a href="registers.md">registers.md</a>. Core design choices:</p>
+<ul>
+<li>A monthly, 45-minute Data Governance Council chaired by the Head of IT, with CFO sponsorship and domain owners from marketing, procurement, finance, retail operations, and HR. Existing role holders are assigned; no six-person committee is hired.</li>
+<li>Enforce access/classification through managed devices, default masking, role groups, restricted exports, logged exceptions, and quarterly access reviews. Enforce quality through point-of-entry validation, quarantine, owners, measurable thresholds, and publication gates. Enforce retention through purpose-specific schedules, legal holds, verified propagation, and deletion evidence.</li>
+<li>Uganda DPPA is the current operating baseline. The legal map uses sections 7, 16, 19, 23 and 29 as research references; confirm exact consolidated text and regulations with counsel. GDPR Articles 5-7, 12-22, 25, 28, 32-35 and 44-49 are relevant if territorial scope or contract makes them applicable. CCPA/CPRA is comparative only pending a California nexus/threshold assessment.</li>
+</ul>
+<p>The single day-one prevention control for the Jinja laptop event is a policy implemented as managed full-disk encryption and controlled export, not a decorative policy document. The daily-practice risk is spreadsheet extraction; the safe alternative must be approved masked views, exception logging, and bulk-export alerts. The CFO memo estimates manual reporting labor only under explicit assumptions and separates public case outcomes from SRG forecasts.</p>
+<h2 id="b1-architecture-and-data-model">B1 | Architecture and Data Model</h2>
+<h3 id="pattern-decision">Pattern decision</h3>
+<p>Scores are 1 (poor) to 5 (strong). Weights total 100 and favor connectivity and operating capacity because SRG has 23 stores, hours-long outages, four IT staff, and no data engineers.</p>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th style="text-align: right;">Weight</th>
+<th style="text-align: right;">Centralized</th>
+<th style="text-align: right;">Decentralized</th>
+<th style="text-align: right;">Federated</th>
+<th style="text-align: right;">Hub-and-spoke</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Budget / cost control</td>
+<td style="text-align: right;">25%</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>Offline resilience</td>
+<td style="text-align: right;">25%</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>Fit to current skills</td>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>Governance / consistent IDs</td>
+<td style="text-align: right;">15%</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>Reporting scalability</td>
+<td style="text-align: right;">15%</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><strong>Weighted score / 5</strong></td>
+<td style="text-align: right;"><strong>100%</strong></td>
+<td style="text-align: right;"><strong>2.70</strong></td>
+<td style="text-align: right;"><strong>2.95</strong></td>
+<td style="text-align: right;"><strong>3.05</strong></td>
+<td style="text-align: right;"><strong>3.80</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Hub-and-spoke is recommended: retain operational systems initially, buffer store events locally, sync idempotently when connectivity returns, centralize mastered identifiers and analytical copies, and migrate only when evidence warrants it. A single central operational database would make outages a sales-blocking event; fully decentralized operation perpetuates fragmentation; federation leaves too much capability burden on the two SQL-capable staff.</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+  POS[MySQL POS] --&gt; OUTBOX[Encrypted local outbox]
+  WEB[PostgreSQL e-commerce] --&gt; HUB[Managed integration hub]
+  LOY[Loyalty cloud DB] --&gt; HUB
+  ERP[Odoo inventory] --&gt; HUB
+  PAY[MTN and Airtel exports] --&gt; HUB
+  CRM[CRM SaaS] --&gt; HUB
+
+  OUTBOX --&gt; HUB
+  HUB --&gt; MDM[Coexistence MDM]
+  MDM --&gt; WH[Warehouse]
+  WH --&gt; BI[Board dashboard]
+  SEC[Security controls] -. governs .-&gt; HUB
+  SEC -. governs .-&gt; MDM
+  SEC -. governs .-&gt; WH
+</pre><figcaption>Architecture</figcaption></figure>
+
+<h3 id="er-model-and-normalization">ER model and normalization</h3>
+<p>The <a href="../diagrams/srg-erd.mmd">Crow's Foot ER source</a> includes Customer, Product, Store, SalesOrder, OrderLine, Payment, Supplier, SupplierProduct, and LoyaltyAccount. A customer can have zero or more orders and multiple program accounts; an order contains one or more lines and one or more payments; Product-Supplier is many-to-many through SupplierProduct. Digital orders may have no physical store. A household is a separately governed optional relationship and is never inferred just from a shared address.</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+  Customer[Customer] --&gt;|places| Order[Sales order]
+  Customer --&gt;|may enrol| Loyalty[Loyalty account]
+  Order --&gt;|contains| Line[Order line]
+  Product[Product] --&gt;|sold as| Line
+  Store[Store] --&gt;|fulfills| Order
+  Order --&gt;|settled by| Payment[Payment]
+  Supplier[Supplier] --&gt;|supplies| SupplierProduct[Supplier product]
+  Product --&gt;|sourced as| SupplierProduct
+
+  Customer --&gt; C1[Enterprise customer ID]
+  Product --&gt; P1[SKU and category]
+  Store --&gt; S1[Store district]
+  Order --&gt; O1[Order date and channel]
+  Payment --&gt; Pay1[Method and currency]
+</pre><figcaption>Srg Erd</figcaption></figure>
+
+<ol>
+<li><strong>UNF:</strong> illustrative sales export has repeated item columns, mixed date/currency formats, and transaction plus customer/product labels in one row. It is not a claim about the absent source extract.</li>
+<li><strong>1NF:</strong> one row per transaction line; atomic IDs, quantity, unit price, payment method/reference, date, and currency; repeated items become separate rows.</li>
+<li><strong>2NF:</strong> separate Order header from OrderLine; line attributes depend on the full order-line key, not only order ID; customer, store, payment and date are referenced by keys.</li>
+<li><strong>3NF:</strong> move customer, product, store, supplier, payment method, and date descriptions into their own entities. Product category/supplier labels no longer depend transitively on a sales line key. Preserve source aliases in crosswalks.</li>
+</ol>
+<p><strong>Justified denormalization:</strong> a star-schema fact table stores transaction measures with dimension surrogate keys and selected descriptive attributes for scan-efficient Board reporting. It duplicates some labels and can lag the operational truth; dimensions remain mastered, refreshes are gated, and facts are rebuilt/reconciled from immutable raw data. This is not an argument to denormalize the transaction-entry core.</p>
+<p>Model assumptions and break cases: (1) one loyalty account maps to one person; family phone-sharing can violate that, so retain separate person links and stewardship. (2) a sale has one currency; split tender may have multiple Payment rows. (3) one supplier owns one product; imports/private-label alternatives need SupplierProduct and effective dates. (4) a digital order belongs to a store; it may ship from a warehouse or third-party fulfillment, so store key is optional and fulfillment is modeled separately when available.</p>
+<h2 id="b2-data-quality-and-cleansing">B2 | Data Quality and Cleansing</h2>
+<p>Run <code>scripts/generate_demo_data.py</code> then <code>scripts/profile_clean.py</code>. The exact-match logic is normalized email OR normalized name plus phone; missing/ambiguous identity stays separate. No fuzzy merge was used in the measured demo.</p>
+<table>
+<thead>
+<tr>
+<th>Demo metric</th>
+<th style="text-align: right;">Customers before</th>
+<th style="text-align: right;">Customers after</th>
+<th style="text-align: right;">Products before</th>
+<th style="text-align: right;">Products after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rows</td>
+<td style="text-align: right;">5,000</td>
+<td style="text-align: right;">3,869</td>
+<td style="text-align: right;">1,200</td>
+<td style="text-align: right;">1,200</td>
+</tr>
+<tr>
+<td>Matched duplicate rows / duplicate SKUs</td>
+<td style="text-align: right;">22.62%</td>
+<td style="text-align: right;">0.00%</td>
+<td style="text-align: right;">4.92%</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr>
+<td>Accuracy proxy (structural plausibility only)</td>
+<td style="text-align: right;">8.16%</td>
+<td style="text-align: right;">93.12%</td>
+<td style="text-align: right;">100.00%</td>
+<td style="text-align: right;">100.00%</td>
+</tr>
+<tr>
+<td>Consistency</td>
+<td style="text-align: right;">1.70%</td>
+<td style="text-align: right;">100.00%</td>
+<td style="text-align: right;">48.17%</td>
+<td style="text-align: right;">100.00%</td>
+</tr>
+<tr>
+<td>Completeness</td>
+<td style="text-align: right;">96.28%</td>
+<td style="text-align: right;">96.95%</td>
+<td style="text-align: right;">100.00%</td>
+<td style="text-align: right;">100.00%</td>
+</tr>
+<tr>
+<td>Validity</td>
+<td style="text-align: right;">8.16%</td>
+<td style="text-align: right;">93.12%</td>
+<td style="text-align: right;">48.17%</td>
+<td style="text-align: right;">100.00%</td>
+</tr>
+<tr>
+<td>Timely within 90 days</td>
+<td style="text-align: right;">24.32%</td>
+<td style="text-align: right;">24.35%</td>
+<td style="text-align: right;">15.67%</td>
+<td style="text-align: right;">15.67%</td>
+</tr>
+<tr>
+<td>Uniqueness</td>
+<td style="text-align: right;">77.38%</td>
+<td style="text-align: right;">100.00%</td>
+<td style="text-align: right;">95.08%</td>
+<td style="text-align: right;">100.00%</td>
+</tr>
+</tbody>
+</table>
+<p>These values are generated evidence, not SRG actuals. Duplicate-SKU conflicts are not auto-merged: all 1,200 product IDs remain, source codes are retained as aliases, and conflicting rows receive provisional unique warehouse SKUs pending stewardship. Customer aliases map through <code>data/cleaned/customer_crosswalk.csv</code>, preserving every source ID for replay and reversal. Timeliness uses synthetic <code>LastUpdatedAt</code> and a 90-day SLA as-of 2025-06-30; cleaning cannot make stale source data fresh. Accuracy cannot be proven without ground truth. <code>accuracy_proxy_pct</code> is a structural plausibility proxy and must not be reported as verified factual accuracy. Counts and variant classes are in <code>data/quality_before_after.csv</code>.</p>
+<p>Root-cause reasoning and the fishbone are in <a href="../diagrams/stock-fishbone.mmd">stock-fishbone.mmd</a>. The brief gives 8.4% variance but no stock snapshots or movement logs; likely mechanisms are hypotheses. Collect time-aligned book/physical quantities, receipts, returns, transfers, adjustments, unit conversions, POS retry logs, and count evidence before ranking causes. The example broken ETL log in <code>data/etl_error_log_demo.txt</code> is synthetic: skipped store extract, duplicate product key, and a false <code>SUCCESS</code> after partial load. Production control is fail-closed status, checkpoints, idempotent replay, and quarantine.</p>
+<figure class="diagram"><pre class="mermaid">flowchart TB
+  Root[8.4% variance] --&gt; People[People]
+  Root --&gt; Process[Process]
+  Root --&gt; Technology[Technology]
+  Root --&gt; Master[Master data]
+  Root --&gt; Physical[Physical operations]
+  Root --&gt; Measurement[Measurement]
+
+  People --&gt; P1[Receiving quantity mis-keyed]
+  People --&gt; P2[Counting or unit confusion]
+  Process --&gt; Pr1[Late transfer capture]
+  Process --&gt; Pr2[No reconciliation SLA]
+  Technology --&gt; T1[Offline POS replay gap]
+  Technology --&gt; T2[Duplicate retries]
+  Master --&gt; M1[Unit conversion error]
+  Master --&gt; M2[Multiple product IDs]
+  Physical --&gt; Ph1[Damaged stock not recorded]
+  Physical --&gt; Ph2[Count timing mismatch]
+  Measurement --&gt; Me1[Missing stock snapshots]
+  Measurement --&gt; Me2[Missing transfer logs]
+</pre><figcaption>Stock Fishbone</figcaption></figure>
+
+<p>Twenty entry controls with owners and enforcement are in <code>docs/validation_rules.csv</code>. Monitoring: daily pipeline/source completeness and reconciliation; weekly customer/product scorecards; alert immediately on any unsupported currency, source-ID collision, missing partition, or breach escalation; alert at &lt;99.5% fact/dimension match; alert if mobile-money payment-reference exception exceeds 1% per provider; inventory variance &gt;2% or the Finance-approved value threshold triggers recount. Stewards own exceptions; domain owners own root cause; Head of IT owns pipeline replay; overdue critical issues go to Council.</p>
+<h2 id="b3-customer-mdm">B3 | Customer MDM</h2>
+<p>Use <strong>coexistence MDM</strong>: golden identity and crosswalk are centrally governed, while POS/CRM/e-commerce/loyalty continue during transition. Reject registry-only because unresolved duplicates still reach operational workflows; reject immediate centralization because connectivity and source replacement are unrealistic; reject consolidation-only as insufficient for returning golden identifiers to operational use.</p>
+<p>Golden record: enterprise ID; source ID crosswalks; full name; normalized phone; email; district/address; preferences and purpose-specific consent; provenance, confidence, last-verified time, effective dates, merge/unmerge audit. Attribute survivorship: current consent/preference wins only from the consent ledger; verified customer-updated contact beats stale CRM, then CRM over POS free text; name chooses highest-completeness verified CRM/loyalty evidence; address uses recent verified customer update; source values and provenance remain available rather than being overwritten.</p>
+<p>Deterministic: exact normalized phone plus name, exact verified email, or existing enterprise crosswalk. Probabilistic review score: phone exact 40%, email exact 25%, normalized name similarity 20%, district 10%, DOB 5%. Auto-link only at &gt;=95 with exact phone/email support and no conflicting DOB or protected attribute; 75-94 is manual review; &lt;75 remains separate. Hard conflicts always block automatic merge. A false merge can destroy loyalty separation, expose purchase history, and impair rights; merges are reversible and logged.</p>
+<p>The offline process is shown in <a href="../diagrams/mdm-offline.mmd">mdm-offline.mmd</a>: create a provisional local ID and encrypted outbox event, continue sale, then sync an idempotent upsert. The steward queue handles ambiguity. Local IDs are aliases, not competing golden IDs. Store managers co-design the workflow and receive an outage-safe reconciliation report; no store is penalized for connectivity-related provisional capture.</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+  Store[Store POS] --&gt; Provisional[Create provisional ID]
+  Provisional --&gt; Local[Continue offline sale]
+  Local --&gt; Edge[Encrypted local outbox]
+  Edge --&gt; Hub[Retry idempotent upsert]
+  Hub --&gt; MDM[Customer MDM]
+  MDM --&gt; Check{High confidence and no conflict?}
+  Check --&gt;|Yes| Map[Enterprise ID and crosswalk]
+  Check --&gt;|No| Steward[Steward review queue]
+  Steward --&gt; Decision{Approve merge?}
+  Decision --&gt;|Yes| Map
+  Decision --&gt;|No| Keep[Keep separate identities]
+  Map --&gt; Update[Local cache updated on reconnect]
+</pre><figcaption>Mdm Offline</figcaption></figure>
+
+<h2 id="b4-integration-warehouse-real-time">B4 | Integration, Warehouse, Real-Time</h2>
+<p><a href="../diagrams/warehouse-star.mmd">Warehouse star</a> covers FactSales plus future FactInventorySnapshot and aggregate FactFootfall, with conformed Date, Customer, Product, Store, and Payment dimensions. The five logical sources assumption is documented above. Inventory fact is necessary to test variance and availability; it cannot be populated from sales alone.</p>
+<p><strong>Batch workflow:</strong> source-specific extract (POS checkpointed CSV/replica, PostgreSQL snapshot, loyalty API/export, Odoo incremental updated-at, payment-provider settlement file); immutable encrypted landing; schema/count/checksum/watermark checks; normalize ID/date/currency/unit; deterministic matching and crosswalk; load dimensions then facts; SCD2 effective-date product/store changes; count/amount/FK reconciliation; atomic partition publish; quarantine and owner alert on any failed gate. Store uploads resume from a durable local checkpoint. <a href="../diagrams/etl-workflow.mmd">etl-workflow.mmd</a> and <code>sql/etl_transform.sql</code> implement the core flow.</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+  Date[Dim Date] --&gt; Sales[Fact Sales]
+  Customer[Dim Customer] --&gt; Sales
+  Product[Dim Product] --&gt; Sales
+  Store[Dim Store] --&gt; Sales
+  Payment[Dim Payment] --&gt; Sales
+
+  Date --&gt; Inventory[Fact Inventory Snapshot]
+  Product --&gt; Inventory
+  Store --&gt; Inventory
+
+  Date --&gt; Footfall[Fact Footfall]
+  Store --&gt; Footfall
+
+  Sales --&gt; Board[Board reporting]
+  Inventory --&gt; Board
+  Footfall --&gt; Board
+</pre><figcaption>Warehouse Star</figcaption></figure>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+  A[Extract source snapshots] --&gt; B[Land encrypted raw files]
+  B --&gt; C[Validate schema and checksums]
+  C --&gt;|Pass| D[Normalize dates and IDs]
+  C --&gt;|Fail| Q[Quarantine and alert]
+  D --&gt; E[Reference lookups and exact matching]
+  E --&gt; F[MDM crosswalk]
+  F --&gt; G[Load dimensions first]
+  G --&gt; H[Load fact rows idempotently]
+  H --&gt; I[Reconcile counts and integrity]
+  I --&gt;|All gates pass| J[Publish warehouse partition]
+  I --&gt;|Any gate fails| Q
+  Q --&gt; K[Owner triage and replay]
+</pre><figcaption>Etl Workflow</figcaption></figure>
+
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>ETL</th>
+<th>ELT</th>
+<th>SRG decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency</td>
+<td>Transform before load; predictable batch</td>
+<td>Raw data lands quickly; transformation follows</td>
+<td>Batch daily for finance/Board; smaller CDC only for operational alerts</td>
+</tr>
+<tr>
+<td>Cost</td>
+<td>Compute outside warehouse; more pipeline components</td>
+<td>Warehouse compute can become expensive if uncontrolled</td>
+<td>Compare total managed-service cost at pilot volume</td>
+</tr>
+<tr>
+<td>Scalability</td>
+<td>Separate workers scale independently</td>
+<td>Warehouse scales transformation</td>
+<td>Begin simple; benchmark before migration</td>
+</tr>
+<tr>
+<td>Complexity</td>
+<td>More jobs and schema mapping</td>
+<td>SQL model/governance burden shifts to warehouse</td>
+<td>Two SQL-capable IT staff favor managed, documented pipelines</td>
+</tr>
+<tr>
+<td>Connectivity</td>
+<td>Buffer at source and upload later</td>
+<td>Same source ingestion issue remains</td>
+<td>Edge outbox plus resumable batch; cloud choice does not fix outages</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Streaming judgment:</strong> use a narrow stream for inventory movement/stock availability only if POS/Odoo can emit reliable idempotent events and stores have store-and-forward; alert on stale inventory separately. Mobile-money fraud detection needs provider authorization/settlement events and measured fraud windows; footfall sensor events do not identify payment fraud. Pilot provider payment-event scoring with rules, not AI black-box decisions; process suspicious patterns within minutes only if loss evidence justifies cost. Footfall stays anonymized/aggregated at edge and supports occupancy planning, not person matching. Monthly customer segmentation, Board reporting, supplier reconciliation, and most quality checks remain batch.</p>
+<h2 id="c1-metadata">C1 | Metadata</h2>
+<p><code>docs/data_dictionary.csv</code> provides 40+ business, technical, and administrative elements with lineage, owner, sensitivity, and quality rule. Tags: domain <code>{customer, product, sales, inventory, supplier, people, payment, footfall}</code>; sensitivity <code>{public, internal, confidential, restricted}</code>; quality <code>{unprofiled, monitored, exception, certified}</code>. The <a href="../diagrams/kpi-lineage.mmd">KPI lineage</a> defines monthly active customer as distinct mastered customer IDs with qualifying transaction lines in the selected month; returns do not create separate customers and voids are excluded.</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+  SRC[POS and app raw rows] --&gt; LAND[Encrypted landing]
+  LAND --&gt; CLEAN[Standardize dates and values]
+  CLEAN --&gt; MATCH[Customer matching]
+  MATCH --&gt; FACT[Fact sales]
+  FACT --&gt; MEASURE[Monthly active customers]
+  MEASURE --&gt; MODEL[Semantic model]
+  MODEL --&gt; DASH[Dashboard KPI]
+  RULE[Exclude voids and returns] -. governs .-&gt; MEASURE
+</pre><figcaption>Kpi Lineage</figcaption></figure>
+
+<p>Address schema change impact: ingestion mappings and MDM survivorship; POS/CRM/e-commerce sync; consent/rights workflows; masked views and access policies; customer dimension, SCD2 history, address quality rules; district segmentation, store-catchment analysis, and Board dashboard filters. Require versioned schema, dual-write/backfill plan, downstream dependency review, and owner sign-off before release.</p>
+<p>Catalog comparison: OpenMetadata offers an open-source catalog and lineage surface but still needs hosting, connectors, upgrades, and an operator; Collibra offers managed governance workflows and support but license/implementation costs are disproportionate before ownership maturity is established. Start with versioned dictionary, owner registry, lineage diagrams, and issue log in the repository; run an OpenMetadata pilot only after a named technical custodian and connector inventory exist. Reassess total cost including support, not license alone.</p>
+<h2 id="c2-security-and-privacy">C2 | Security and Privacy</h2>
+<p>Threat model includes stolen/unmanaged endpoint, malicious or careless insider export, SaaS credential compromise, phishing/ransomware, store outage and delayed replay, duplicate-link disclosure, weak vendor/subprocessor control, stale backups, and footfall re-identification. The 12 scored risks and mitigations are in <a href="registers.md#risk-register">registers.md</a>.</p>
+<p>Roles and least-privilege SQL are in <code>sql/access_controls.sql</code>; <code>sql/access_control_tests.sql</code> asserts analyst success for permitted customer fields and denial for email. Run both in a PostgreSQL test database and capture actual result output before claiming test evidence. <code>scripts/mask_hr.py</code> creates <code>data/cleaned/SRG_HR_analytics_masked.csv</code>: national ID and phone are partially masked, exact salary replaced by a band. Raw HR input remains restricted and must not be published.</p>
+<p>Encrypt managed laptops/removable media at rest; TLS for source/warehouse traffic; centrally managed recoverable keys and rotation; restrict raw landing access to service accounts; mask or aggregate analytics; log export and privileged activity; test restore/revocation. Allocate first to endpoints/identity/backup/incident response, then data-platform controls; do not spend the small budget on universal streaming or encrypting public/aggregated data at a higher operational cost than risk reduction.</p>
+<p>The draft EU loyalty DPIA and breach response are in <code>docs/registers.md</code>. Complete a production audit against the compliance register before month 12. The Uganda DPPA breach process is based on prompt PDPO notification under s.23; GDPR's 72-hour authority clock and high-risk subject communication apply only where relevant. The Act's local requirement is not replaced by that GDPR timeframe.</p>
+<h2 id="c3-analytics-dashboard-emerging-technology">C3 | Analytics, Dashboard, Emerging Technology</h2>
+<p>Board questions: (1) which customer cohorts become inactive under an approved recency definition? (2) which segments grow in active customers and contribution? (3) which store-product pairs stock out while elsewhere overstocked? (4) which payment patterns merit fraud review? (5) which districts/categories support Kenya/Rwanda expansion? The workflow is source → data contract and quality gates → conformed dimensions/facts → approved cohort/stock/payment method → role-filtered dashboard/alert → owner action and outcome measurement.</p>
+<p>The static dashboard lives in <code>dashboard/</code>, supports period/channel/store/district/category filters, monthly trend, category mix, store ranking, quality checkpoint, transaction detail, pagination, and filtered CSV export. See <a href="dashboard-insight-brief.md">dashboard-insight-brief.md</a>. It answers descriptive synthetic sales questions only. Churn, stock optimization, fraud, margin, and expansion claims need additional source data; no conclusions are fabricated. The chart critique and replacement decision are in the insight brief.</p>
+<p>Cloud stack assessment: <strong>Google Cloud Storage + Dataflow/Dataproc only when justified + BigQuery + Looker Studio</strong> is a plausible managed analytical option, but start with the smallest managed PostgreSQL/batch deployment; BigQuery/serverless spending, IAM, network egress, and cross-border configuration must be costed. Pilot a low-risk sales subject area, monthly cost alert, export test, and operational runbook before adoption. Decision: <strong>pilot</strong>, not immediate full migration.</p>
+<p>AI-driven trend: AI-assisted anomaly and matching suggestions can prioritize steward queues, but no automatic customer merges, pricing/credit decisions, or protected-trait inference. Decision: <strong>pilot offline on labeled synthetic/approved samples with precision/recall and subgroup review; reject autonomous decisions</strong> until data rights, error costs, and fairness are evidenced. Maturity: currently fragmented/manual; month 6 repeatable batch and named owners; year 1 governed warehouse/quality monitoring; year 2 controlled self-service and selective event processing, contingent on people, legal, and cost readiness.</p>
+<h2 id="c4-operating-model-and-control-framework">C4 | Operating Model and Control Framework</h2>
+<h3 id="data-ownership-and-stewardship-model">Data ownership and stewardship model</h3>
+<p>The organization cannot pursue enterprise governance successfully if the owners of customer, product, stock, and payment data remain unclear. The first design decision in this portfolio is to reuse existing roles: each source domain retains a domain owner for accountability, with a named data steward for daily review, a technical custodian for pipeline implementation, and a business sponsor for exception sign-off. This matches the evidence in the brief: SRG has existing leaders in IT, finance, procurement, store operations, marketing, and HR, but no visible operating data-governance structure. Ownership is therefore assigned to the people already responsible for the process rather than to newly hired enterprise roles that would not be sustainable after the initial pilot.</p>
+<p>The model is simple. Product data is owned by procurement and category management because they govern supplier, product variants, and cost flows. Sales and customer data are owned by retail operations and marketing because they decide who is a customer, what is a loyalty record, and how customer value is measured. Inventory and stock data are owned by operations and finance because variance and availability impact revenue, margin, and reconciliation. Payments and financial records remain under finance and the payment-provider relationship, with system and security controls owned by IT. HR remains under HR and the privacy/people team, with legal review for the data retention and breach plan.</p>
+<p>This pattern is important because governance does not stop at policy writing. Data owners must approve acceptable-quality thresholds, validate critical terms, review exceptions, and confirm retention rules. Without that chain, the dashboard may look credible while quietly publishing erroneous or outdated values. A stewardship queue therefore carries all unresolved duplicates, product disputes, supplier mismatches, and inconsistent loyalty IDs for argument-based review. A control board reviews recurring exceptions and decides whether the issue is a source-process problem, a quality rule problem, or a regulatory exposure.</p>
+<h3 id="service-level-controls-and-operational-assurance">Service-level controls and operational assurance</h3>
+<p>Operational governance needs a set of service levels, not just a policy document. The portfolio assumes a monthly Board pack with a hard threshold that critical data assets must have a named owner, retention schedule, access class, and quality score. For example, critical dimensions such as Customer, Product, Store, and Inventory must have lineage and a quality score above 95% before they become trusted for Board reporting. Supplier and payment files have a stricter acceptance standard because a single bad file can distort reconciliation or trigger a financial control failure.</p>
+<p>The following control stack operationalizes the governance model:</p>
+<ul>
+<li>Source validation: schema check, duplicate detection, required field validation, file checksum, and source watermark.</li>
+<li>Landing-zone controls: encrypted raw source store, read-only restricted access, immutable retention, and audit log.</li>
+<li>MDM controls: golden-ID crosswalk, reversible merge, conflict quarantine, and steward review queue.</li>
+<li>BI controls: dashboard access by role, row-level or field-level masking, publish approval, and refresh audit.</li>
+<li>Privacy controls: purpose limitation, consent traceability, retention period evidence, breach escalation clock, and deletion verification.</li>
+<li>Exception control: every unresolved quality issue has an owner, due date, and closure evidence.</li>
+</ul>
+<p>The governance structure creates confidence for the board and reduces the risk that a clean dashboard simply repeats stale or disputed source assumptions. This is essential because the assignment also describes a loss of customer data and a delayed internal escalation. A technical solution without a decision process would not address the probability of recurrence.</p>
+<h3 id="data-retention-deletion-and-legal-defensibility">Data-retention, deletion, and legal defensibility</h3>
+<p>The legal part of the EDM strategy is often underdeveloped in practical project work, but it is central to this brief. SRG handles customer, loyalty, HR, payment, and operational data across retail and internal functions. That means the organization must distinguish data life cycles by purpose rather than by system. A sales line record may be required for financial reporting, while a loyalty preference may require explicit consent and a deletion window tied to that purpose. The same applies to employee records, where salary, phone, and ID details may be kept under employment law and local privacy obligations, but not reused for general analytics.</p>
+<p>The portfolio therefore recommends that retention schedules become part of the data-contract layer. Each source table and report should carry a standard record: purpose, owner, legal basis, retention period, archive strategy, active subject rights, and deletion trigger. This must be reviewed with legal counsel and updated when source systems change. It also means the dashboard cannot use raw HR or full customer PII for analytics without prior de-identification and a defined purpose. The synthetic masked HR response in this project demonstrates the principle, but production deployment requires a formal review with the HR function and privacy lead.</p>
+<p>A robust retention process reduces legal risk and supports information governance. It also reduces future confusion about which system is the system of record. When a record is deleted or merged, the organization must preserve lineage information so that audits, rights requests, and incident investigations remain traceable. This is especially important in the SRG case, where a stolen export triggered a delayed internal escalation and a reputational risk scenario.</p>
+<h2 id="c5-portfolio-evaluation-and-scenario-rigor">C5 | Portfolio Evaluation and Scenario Rigor</h2>
+<h3 id="understanding-the-limits-of-the-scenario-and-the-evidence">Understanding the limits of the scenario and the evidence</h3>
+<p>This portfolio is intentionally transparent about limits. It does not claim to know the exact SRG customer base, product list, payroll records, or raw breach timeline. The absent PDF appendices mean that some material facts in the brief are necessarily interpreted and shaped into a consultant-like model. The assignment is not asking for a forensic reconstruction of a real company; instead, it is asking for data-management reasoning, policy design, architecture, governance, and a credible solution narrative. In that sense, the project acts as a structured demonstration of how an EDM consultant would diagnose, scope, and recommend a response to a fragmented and risky data environment.</p>
+<p>This is a crucial distinction: evidence quality matters. A strong plan in data management is not judged by whether the consultant claims to have seen the exact organization-wide systems; it is judged by whether the plan is internally consistent, risk-based, operationally feasible, and resilient under realistic governance constraints. The portfolio reflects that standard. It distinguishes synthetic demonstration data from actual SRG data, states the assumptions, and makes the boundary visible in the narrative.</p>
+<h3 id="why-the-portfolio-is-credible-despite-missing-source-files">Why the portfolio is credible despite missing source files</h3>
+<p>A credible EDM recommendation depends on four things: clear business symptoms, a plausible operating model, defensible control design, and a measured delivery roadmap. The scenario supplies all four. The symptoms are visible across customer duplicates, stock variance, manual processes, data exfiltration, and delayed reporting. The operating model is a staged hub-and-spoke architecture designed for a mid-sized retailer with limited technical capacity. The control design frames security, retention, stewardship, and issue ownership as part of the same enterprise data process rather than separate IT activities. The roadmap provides phases, gate decisions, and budget envelopes so the board can understand the next steps and the cost of delay.</p>
+<p>The synthetic dataset, dashboard, and SQL scripts enrich that case by proving that the recommended techniques are runnable, measurable, and auditable. They do not replace the real system; they demonstrate the artifact chain a decision-maker expects: source, quality gate, MDM, warehouse, dashboard, and governance review. That is the core of EDM consulting work: not simply writing SQL or building a dashboard, but proving the business case for controlled data operations.</p>
+<h2 id="d1-18-month-roadmap-and-budget">D1 | 18-Month Roadmap and Budget</h2>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Months</th>
+<th style="text-align: right;">Allocation</th>
+<th>Milestones / gate</th>
+<th>Success measures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stabilize and govern</td>
+<td>1-3</td>
+<td style="text-align: right;">UGX 70M</td>
+<td>Charter, owners, endpoint encryption, breach drill, source inventory</td>
+<td>100% managed laptops encrypted; named owners for critical domains; incident drill completed</td>
+</tr>
+<tr>
+<td>Visible quick wins</td>
+<td>4-6</td>
+<td style="text-align: right;">UGX 100M</td>
+<td>Reproducible profiling, approved cleansed customer/product extract, first reconciled dashboard, three-store outbox pilot</td>
+<td>Monthly report cycle &lt;=4 days (baseline method confirmed); month-6 Board demo; zero partial-success publishes</td>
+</tr>
+<tr>
+<td>Integrate and master</td>
+<td>7-9</td>
+<td style="text-align: right;">UGX 110M</td>
+<td>Customer/product crosswalk, coexistence MDM, warehouse sales MVP, rule/exception queues</td>
+<td>&gt;=99.5% fact-to-dimension resolution; all merges reversible and logged</td>
+</tr>
+<tr>
+<td>Assure and audit</td>
+<td>10-12</td>
+<td style="text-align: right;">UGX 90M</td>
+<td>Metadata lineage, RBAC/masking, rights and retention rehearsal, PDPO audit pack</td>
+<td>100% critical datasets have owner/classification; access review complete; PDPO evidence ready</td>
+</tr>
+<tr>
+<td>Scale selectively</td>
+<td>13-18</td>
+<td style="text-align: right;">UGX 110M</td>
+<td>Extend stores, inventory snapshot fact, targeted event pilot, Kenya/Rwanda readiness gate</td>
+<td>Stock variance baseline reproducible and trend improves toward &lt;=5.5%; monthly reporting &lt;=2 days; cost within cap</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>18 months</strong></td>
+<td style="text-align: right;"><strong>UGX 480M</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Itemized envelope: existing staff backfill/training and short specialist support UGX 80M + managed platform/cloud/licenses UGX 115M + integration/quality/MDM delivery UGX 112M + endpoint/security/privacy controls UGX 58M + change/adoption UGX 30M + contingency UGX 85M = <strong>UGX 480M</strong>. Contingency is 17.7% of total and may be released only by CFO at stage gates. Amounts are planning estimates requiring vendor quotes and tax/FX validation. No additional permanent data-engineering hire is assumed. If CFO confirms the budget is annual and makes a separate second-year allocation, the Board must approve a revised total; this roadmap does not silently spend UGX 720M.</p>
+<p>The <a href="../diagrams/roadmap.mmd">roadmap diagram</a> sequences governance before quality, quality before MDM, MDM before integration, metadata through the lifecycle, security across all phases, and analytics as the measurable benefit. Each phase has a stop/go checkpoint; if a pilot misses access, quality, cost, or reliability gates, pause scale and fix the root cause.</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+  start([Governance reset]) --&gt; p1[Phase 1: Stabilize and govern]
+  p1 --&gt; g1{Ready for quick wins?}
+  g1 --&gt; p2[Phase 2: Visible quick wins]
+  g1 --&gt; stop1([Pause and fix root cause])
+
+  p2 --&gt; g2{Can reporting be trusted?}
+  g2 --&gt; p3[Phase 3: Integrate and master]
+  g2 --&gt; stop2([Pause and review quality])
+
+  p3 --&gt; g3{Data quality and access approved?}
+  g3 --&gt; p4[Phase 4: Assure and audit]
+  g3 --&gt; stop3([Pause for remediation])
+
+  p4 --&gt; g4{Business risk acceptable?}
+  g4 --&gt; p5[Phase 5: Scale selectively]
+  g4 --&gt; stop4([Hold scale until controls pass])
+
+  p5 --&gt; outcome([Board-ready EDM capability])
+</pre><figcaption>Roadmap</figcaption></figure>
+
+<h2 id="d2-decisions-red-team-reflection-viva">D2 | Decisions, Red Team, Reflection, Viva</h2>
+<p>The decision log has nine entries in <code>docs/registers.md</code>. The red-team challenge is in <a href="red-team.md">red-team.md</a>; the reflective essay draft is in <a href="reflection.md">reflection.md</a>. The <a href="viva-guide.md">viva guide</a> provides a 15-minute defense path and likely challenge questions. Rewrite the reflection to your actual career goals and voice, verify legal references, and declare AI assistance according to KIU policy before submission.</p></article>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>if(window.mermaid)mermaid.initialize({startOnLoad:true,theme:'base',securityLevel:'strict',themeVariables:{primaryColor:'#edf4e9',primaryTextColor:'#182722',primaryBorderColor:'#26786e',lineColor:'#607168',secondaryColor:'#fff0e8',tertiaryColor:'#f6f8f4',fontFamily:'Manrope, sans-serif'}});</script>
+</body>
+</html>

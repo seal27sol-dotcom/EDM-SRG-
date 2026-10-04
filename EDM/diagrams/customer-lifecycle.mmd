@@ -1,0 +1,19 @@
+flowchart LR
+  POS[POS signup] --> LOCAL[23 local POS databases]
+  APP[Loyalty app] --> LDB[Loyalty database]
+  WEB[Checkout] --> PG[Shop platform]
+  PAY[Mobile money link] --> LOCAL
+
+  LOCAL --> USE[Service and reporting]
+  LDB --> USE
+  PG --> USE
+
+  USE --> SHARE[Shared data with partners]
+  SHARE --> ARCHIVE[Restricted archive]
+  ARCHIVE --> DELETE[Verified deletion]
+
+  LOCAL -. no common ID .-> E1[Duplicate records]
+  USE -. weak access .-> E2[Data leak risk]
+  USE -. poor purpose controls .-> E3[Manual joins]
+  SHARE -. vendor controls unclear .-> E4[Cross border concern]
+  ARCHIVE -. missing retention .-> E5[Deletion gap]

@@ -1,0 +1,17 @@
+flowchart LR
+  Date[Dim Date] --> Sales[Fact Sales]
+  Customer[Dim Customer] --> Sales
+  Product[Dim Product] --> Sales
+  Store[Dim Store] --> Sales
+  Payment[Dim Payment] --> Sales
+
+  Date --> Inventory[Fact Inventory Snapshot]
+  Product --> Inventory
+  Store --> Inventory
+
+  Date --> Footfall[Fact Footfall]
+  Store --> Footfall
+
+  Sales --> Board[Board reporting]
+  Inventory --> Board
+  Footfall --> Board

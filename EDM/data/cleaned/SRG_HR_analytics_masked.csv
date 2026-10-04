@@ -1,0 +1,81 @@
+EmployeeID,JobTitle,NationalIDMasked,PhoneMasked,SalaryBand
+E0001,HR Officer,****0001,**********82,> UGX 5M
+E0002,Store Manager,****0002,**********34,UGX 2M-5M
+E0003,HR Officer,****0003,**********06,UGX 2M-5M
+E0004,Cashier,****0004,**********86,> UGX 5M
+E0005,IT Analyst,****0005,**********45,< UGX 2M
+E0006,IT Analyst,****0006,**********12,> UGX 5M
+E0007,Store Manager,****0007,**********83,> UGX 5M
+E0008,HR Officer,****0008,**********70,> UGX 5M
+E0009,HR Officer,****0009,**********30,> UGX 5M
+E0010,Store Manager,****0010,**********79,UGX 2M-5M
+E0011,HR Officer,****0011,**********36,UGX 2M-5M
+E0012,HR Officer,****0012,**********77,> UGX 5M
+E0013,IT Analyst,****0013,**********05,UGX 2M-5M
+E0014,Store Manager,****0014,**********46,UGX 2M-5M
+E0015,HR Officer,****0015,**********18,UGX 2M-5M
+E0016,HR Officer,****0016,**********07,UGX 2M-5M
+E0017,IT Analyst,****0017,**********63,< UGX 2M
+E0018,HR Officer,****0018,**********42,UGX 2M-5M
+E0019,Store Manager,****0019,**********85,UGX 2M-5M
+E0020,IT Analyst,****0020,**********21,> UGX 5M
+E0021,Store Manager,****0021,**********98,UGX 2M-5M
+E0022,Store Manager,****0022,**********79,UGX 2M-5M
+E0023,HR Officer,****0023,**********33,> UGX 5M
+E0024,Cashier,****0024,**********99,UGX 2M-5M
+E0025,HR Officer,****0025,**********19,> UGX 5M
+E0026,Store Manager,****0026,**********33,> UGX 5M
+E0027,Cashier,****0027,**********88,< UGX 2M
+E0028,Store Manager,****0028,**********36,UGX 2M-5M
+E0029,HR Officer,****0029,**********12,< UGX 2M
+E0030,Cashier,****0030,**********57,UGX 2M-5M
+E0031,Store Manager,****0031,**********02,> UGX 5M
+E0032,Store Manager,****0032,**********44,UGX 2M-5M
+E0033,IT Analyst,****0033,**********00,> UGX 5M
+E0034,HR Officer,****0034,**********80,> UGX 5M
+E0035,IT Analyst,****0035,**********15,> UGX 5M
+E0036,Cashier,****0036,**********06,UGX 2M-5M
+E0037,IT Analyst,****0037,**********24,UGX 2M-5M
+E0038,IT Analyst,****0038,**********16,UGX 2M-5M
+E0039,Cashier,****0039,**********85,> UGX 5M
+E0040,IT Analyst,****0040,**********95,> UGX 5M
+E0041,Store Manager,****0041,**********01,< UGX 2M
+E0042,IT Analyst,****0042,**********62,< UGX 2M
+E0043,IT Analyst,****0043,**********89,> UGX 5M
+E0044,HR Officer,****0044,**********46,UGX 2M-5M
+E0045,Store Manager,****0045,**********69,UGX 2M-5M
+E0046,Store Manager,****0046,**********24,< UGX 2M
+E0047,IT Analyst,****0047,**********15,UGX 2M-5M
+E0048,Cashier,****0048,**********30,> UGX 5M
+E0049,IT Analyst,****0049,**********79,UGX 2M-5M
+E0050,HR Officer,****0050,**********01,> UGX 5M
+E0051,Store Manager,****0051,**********44,> UGX 5M
+E0052,IT Analyst,****0052,**********29,UGX 2M-5M
+E0053,IT Analyst,****0053,**********76,> UGX 5M
+E0054,IT Analyst,****0054,**********18,UGX 2M-5M
+E0055,Store Manager,****0055,**********14,UGX 2M-5M
+E0056,HR Officer,****0056,**********30,UGX 2M-5M
+E0057,Store Manager,****0057,**********93,> UGX 5M
+E0058,Cashier,****0058,**********01,> UGX 5M
+E0059,HR Officer,****0059,**********65,> UGX 5M
+E0060,HR Officer,****0060,**********77,> UGX 5M
+E0061,IT Analyst,****0061,**********16,> UGX 5M
+E0062,Store Manager,****0062,**********34,< UGX 2M
+E0063,Cashier,****0063,**********32,UGX 2M-5M
+E0064,HR Officer,****0064,**********73,> UGX 5M
+E0065,Store Manager,****0065,**********32,UGX 2M-5M
+E0066,IT Analyst,****0066,**********79,UGX 2M-5M
+E0067,Store Manager,****0067,**********77,UGX 2M-5M
+E0068,IT Analyst,****0068,**********35,UGX 2M-5M
+E0069,IT Analyst,****0069,**********94,< UGX 2M
+E0070,Store Manager,****0070,**********69,> UGX 5M
+E0071,Store Manager,****0071,**********66,> UGX 5M
+E0072,IT Analyst,****0072,**********23,UGX 2M-5M
+E0073,IT Analyst,****0073,**********14,< UGX 2M
+E0074,IT Analyst,****0074,**********37,< UGX 2M
+E0075,IT Analyst,****0075,**********79,> UGX 5M
+E0076,HR Officer,****0076,**********67,> UGX 5M
+E0077,HR Officer,****0077,**********46,> UGX 5M
+E0078,IT Analyst,****0078,**********68,< UGX 2M
+E0079,IT Analyst,****0079,**********51,< UGX 2M
+E0080,HR Officer,****0080,**********70,> UGX 5M

@@ -1,0 +1,21 @@
+rule_id,domain,rule,threshold_or_action,owner,enforcement
+DQ-001,Customer,CustomerID is required and unique within source,Reject missing ID or duplicate source key,Source system owner,Database unique constraint
+DQ-002,Customer,Phone is stored as +256 followed by nine digits when present,Normalize valid variants; quarantine invalid,Customer steward,Form validation and nightly exception queue
+DQ-003,Customer,At least one contact method is supplied where lawful and operationally necessary,Phone or email required; record approved exception,Customer owner,POS/app validation with supervisor override log
+DQ-004,Customer,Email syntax is valid and lower-case,Reject malformed values; preserve null,Customer steward,Application validator
+DQ-005,Customer,District resolves to approved administrative reference,Reject unknown value; do not silently guess,Customer steward,Reference dropdown and steward queue
+DQ-006,Customer,Date fields parse to ISO 8601 and are not future-dated,Reject future DOB/registration dates; log parse failure,Application owner,Schema validation at ingest
+DQ-007,Customer,Exact-match candidate uses normalized phone+name or email,Auto-link only exact key with no attribute conflict; otherwise review,MDM steward,MDM match service and audit log
+DQ-008,Product,Enterprise product ID and active SKU are unique,Quarantine colliding source SKU; preserve both product IDs and aliases; steward assigns canonical code,Product owner,Master data API constraint and steward queue
+DQ-009,Product,Unit belongs to controlled unit vocabulary,Map kg/KGS/Kilograms to kg; unknown goes to review,Product steward,Product form dropdown and ETL gate
+DQ-010,Product,Category belongs to approved hierarchy,Reject unrecognized category; steward corrects taxonomy,Product owner,Reference lookup
+DQ-011,Sales,Transaction date is valid and within source extract watermark,Quarantine unparseable or out-of-window row,Finance data owner,ETL schema contract
+DQ-012,Sales,Quantity is non-zero and return uses a negative quantity,Preserve signed quantity; flag unusual magnitude for review,Store manager,POS rule and exception report
+DQ-013,Sales,Currency uses ISO code and has an effective FX rate,Block unsupported currency; never sum mixed currencies raw,Finance owner,FX lookup with effective dates
+DQ-014,Sales,Payment reference presence follows tender type,Missing-reference rate below 1% per mobile-money provider; investigate breach,Finance owner,Daily reconciliation alert
+DQ-015,Sales,Source transaction ID is idempotent,Duplicate replay is ignored and counted,Data platform owner,Unique source-system transaction key
+DQ-016,Inventory,Book and physical quantity counts share product unit and same cutoff,Variance above 2% or value threshold triggers recount,Inventory owner,Cycle-count workflow with dual approval
+DQ-017,Inventory,"Stock adjustment has reason code, approver, and evidence",100% of adjustments carry approved reason and actor,Store manager,ERP required fields and audit report
+DQ-018,Footfall,Only aggregate count is retained; no persistent person/device identifier,Reject payload containing face image or device ID,Privacy owner,Edge schema allow-list and privacy review
+DQ-019,HR,Analytics copy masks national identifier and phone and bands salary,No direct ID or exact salary in analytics role,HR data owner,Masking job plus column-level database grants
+DQ-020,Pipeline,Source counts and financial totals reconcile before publication,At least 99.5% row match and agreed amount tolerance; otherwise stop publish,Data platform owner,Automated quality gate and alert

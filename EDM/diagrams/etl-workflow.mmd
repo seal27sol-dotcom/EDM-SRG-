@@ -1,0 +1,13 @@
+flowchart TD
+  A[Extract source snapshots] --> B[Land encrypted raw files]
+  B --> C[Validate schema and checksums]
+  C -->|Pass| D[Normalize dates and IDs]
+  C -->|Fail| Q[Quarantine and alert]
+  D --> E[Reference lookups and exact matching]
+  E --> F[MDM crosswalk]
+  F --> G[Load dimensions first]
+  G --> H[Load fact rows idempotently]
+  H --> I[Reconcile counts and integrity]
+  I -->|All gates pass| J[Publish warehouse partition]
+  I -->|Any gate fails| Q
+  Q --> K[Owner triage and replay]

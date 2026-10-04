@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Savanna Retail Group synthetic demonstration analytics dashboard">
+    <title>Savanna | Trading Pulse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="dashboard.js" defer></script>
+</head>
+
+<body>
+    <div class="app-shell">
+        <aside class="sidebar" aria-label="Primary navigation">
+            <a class="brand" href="#overview" aria-label="Savanna Retail Group dashboard home">
+                <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span><strong>SAVANNA</strong><small>RETAIL GROUP</small></span>
+            </a>
+            <div class="workspace-label">INTELLIGENCE</div>
+            <nav>
+                <a class="nav-link active" href="#overview"><span class="nav-icon">◫</span>Trading pulse</a>
+                <a class="nav-link" href="#quality"><span class="nav-icon">⌁</span>Data quality</a>
+                <a class="nav-link" href="#transactions"><span class="nav-icon">▤</span>Transactions</a>
+            </nav>
+            <div class="sidebar-bottom">
+                <div class="period-chip"><span class="status-dot"></span> DEMO ENVIRONMENT</div>
+                <div class="sidebar-caption">PROJECT SAVANNA<br>EDM TURNAROUND</div>
+            </div>
+        </aside>
+
+        <main id="overview" class="main-content">
+            <header class="topbar">
+                <div class="crumb">SRG <span>/</span> BUSINESS INTELLIGENCE <span>/</span> OVERVIEW</div>
+                <div class="topbar-right"><span class="updated-label">SIX-MONTH VIEW</span><span
+                        class="avatar">SR</span></div>
+            </header>
+
+            <section class="page-heading">
+                <div>
+                    <p class="eyebrow">BOARD PERFORMANCE SNAPSHOT <span class="eyebrow-line"></span></p>
+                    <h1>Trading pulse<span class="heading-period" id="headingPeriod"></span></h1>
+                    <p class="subheading">Sales, customer activity and store performance across the omnichannel
+                        business.</p>
+                </div>
+                <button class="export-button" id="downloadButton" type="button"
+                    title="Download the filtered transaction view as CSV"><span aria-hidden="true">↓</span> Export
+                    view</button>
+            </section>
+
+            <div class="demo-notice" role="note"><span class="notice-mark">i</span>
+                <p><strong>Demonstration data.</strong> These are reproducible synthetic records because the
+                    instructor-provided files were not included with the PDF. Figures are not SRG actuals.</p><span
+                    class="notice-period" id="periodLabel"></span>
+            </div>
+
+            <section class="filter-bar" aria-label="Dashboard filters">
+                <label>PERIOD<select id="periodFilter">
+                        <option value="all">All six months</option>
+                    </select></label>
+                <label>CHANNEL<select id="channelFilter">
+                        <option value="all">All channels</option>
+                    </select></label>
+                <label>STORE<select id="storeFilter">
+                        <option value="all">All locations</option>
+                    </select></label>
+                <label>DISTRICT<select id="districtFilter">
+                        <option value="all">All districts</option>
+                    </select></label>
+                <label>CATEGORY<select id="categoryFilter">
+                        <option value="all">All categories</option>
+                    </select></label>
+                <button class="reset-button" id="resetFilters" type="button" title="Clear all filters">Reset <span
+                        aria-hidden="true">↺</span></button>
+            </section>
+
+            <section class="kpi-grid" aria-label="Key performance indicators">
+                <article class="kpi kpi-primary">
+                    <div class="kpi-top"><span>NET SALES</span><span class="kpi-glyph">↗</span></div><strong
+                        id="salesKpi">—</strong><small>UGX · converted at demo planning rates</small>
+                </article>
+                <article class="kpi">
+                    <div class="kpi-top"><span>ACTIVE CUSTOMERS</span><span class="kpi-glyph accent-teal">◎</span></div>
+                    <strong id="customersKpi">—</strong><small>Distinct customers with a transaction</small>
+                </article>
+                <article class="kpi">
+                    <div class="kpi-top"><span>TRANSACTION LINES</span><span class="kpi-glyph accent-orange">▤</span>
+                    </div><strong id="transactionsKpi">—</strong><small>Returns remain negative quantities</small>
+                </article>
+                <article class="kpi">
+                    <div class="kpi-top"><span>RETURN LINES</span><span class="kpi-glyph accent-red">↶</span></div>
+                    <strong id="returnsKpi">—</strong><small id="returnsNote">Share of filtered lines</small>
+                </article>
+            </section>
+
+            <section class="chart-layout">
+                <article class="chart-panel trend-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <p class="eyebrow">REVENUE MOVEMENT</p>
+                            <h2>Monthly net sales</h2>
+                        </div><span class="unit-tag">UGX MILLIONS</span>
+                    </div>
+                    <div class="chart-wrap"><canvas id="trendChart" aria-label="Monthly net sales trend"
+                            role="img"></canvas></div>
+                    <div class="chart-foot"><span><i class="legend-dot"></i>Net sales</span><span id="trendCaption">All
+                            transaction lines · converted to UGX</span></div>
+                </article>
+                <article class="chart-panel category-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <p class="eyebrow">CATEGORY MIX</p>
+                            <h2>Where sales land</h2>
+                        </div><span class="panel-index">01</span>
+                    </div>
+                    <div id="categoryChart" class="bar-chart" aria-label="Sales by product category"></div>
+                </article>
+            </section>
+
+            <section class="store-layout">
+                <article class="chart-panel store-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <p class="eyebrow">STORE COMPARISON</p>
+                            <h2>Performance by location</h2>
+                        </div><span class="panel-index">02</span>
+                    </div>
+                    <div id="storeChart" class="store-chart" aria-label="Sales by store"></div>
+                    <p class="panel-footnote">Select a location to filter the transaction register to that store.</p>
+                </article>
+                <article class="quality-panel" id="quality">
+                    <div class="panel-heading">
+                        <div>
+                            <p class="eyebrow">TRUST THE INPUT</p>
+                            <h2>Data quality checkpoint</h2>
+                        </div><span class="quality-spark">✳</span>
+                    </div>
+                    <p class="quality-intro">Measured on the generated demo inputs using documented exact-match rules.
+                    </p>
+                    <div id="qualityMetrics" class="quality-metrics"></div>
+                    <a class="text-link" href="#transactions">Explore transaction rows <span
+                            aria-hidden="true">→</span></a>
+                </article>
+            </section>
+
+            <section class="table-section" id="transactions">
+                <div class="table-heading">
+                    <div>
+                        <p class="eyebrow">RECORD-LEVEL EXPLORATION</p>
+                        <h2>Transaction register</h2>
+                    </div><span id="rowCount" class="row-count">0 records</span>
+                </div>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>DATE</th>
+                                <th>TRANSACTION</th>
+                                <th>STORE / DISTRICT</th>
+                                <th>CHANNEL</th>
+                                <th>CATEGORY</th>
+                                <th>QTY</th>
+                                <th class="align-right">NET SALES (UGX)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="transactionRows"></tbody>
+                    </table>
+                </div>
+                <div class="table-bottom"><span id="pageLabel">Showing 0</span>
+                    <div class="pagination"><button id="prevPage" type="button"
+                            aria-label="Previous page">←</button><button id="nextPage" type="button"
+                            aria-label="Next page">→</button></div>
+                </div>
+            </section>
+
+            <footer class="footer-note"><span>PROJECT SAVANNA · EDM CAPSTONE</span><span>Generated dataset · fixed seed
+                    20261004 · 2025-01 to 2025-06</span></footer>
+        </main>
+    </div>
+    <dialog id="detailDialog" class="detail-dialog"><button id="closeDialog" class="dialog-close" type="button"
+            aria-label="Close details">×</button>
+        <p class="eyebrow">TRANSACTION DETAIL</p>
+        <h2 id="detailTitle">Transaction</h2>
+        <dl id="detailList"></dl>
+    </dialog>
+</body>
+
+</html>

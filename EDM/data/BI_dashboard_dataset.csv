@@ -1,0 +1,11 @@
+TransactionID,TransactionDate,Month,Year,CustomerID,ProductID,ProductName,Category,StoreID,StoreName,District,Channel,Quantity,UnitPrice,NetSales,Currency,PaymentMethod,ReturnFlag,SourceSystem
+T0000001,2025-02-04,2025-02,2025,C02765,P01145,Personal Care Item,Personal Care,ST04,Mbarara,Mbarara,POS,5,45951.58,229757.90,UGX,MTN MoMo,False,POS
+T0000002,2025-03-09,2025-03,2025,C03789,P01095,Home Essentials,Household,ST04,Mbarara,Mbarara,POS,3,17182.62,51547.86,UGX,MTN MoMo,False,POS
+T0000003,2025-04-06,2025-04,2025,C01665,P01018,Electronics Item,Electronics,APP,App,Unknown,APP,3,63282.86,189848.58,UGX,Cash,False,APP
+T0000004,2025-03-05,2025-03,2025,C03605,P01034,Consumer Item,Grocery,APP,App,Unknown,APP,2,53567.42,107134.84,UGX,Card,False,APP
+T0000005,2025-01-10,2025-01,2025,C01341,P00697,Fresh Item,Fresh Food,ONLINE,Ecom,Unknown,ECOM,2,19920.33,39840.66,UGX,Airtel Money,False,ECOM
+T0000006,2025-01-19,2025-01,2025,C04233,P00378,Daily Necessity,Grocery,ST03,Jinja,Jinja,POS,5,20932.91,104664.55,UGX,Cash,False,POS
+T0000007,2025-05-28,2025-05,2025,C04722,P00688,Wellness Item,Personal Care,ST06,Entebbe,Kampala,POS,4,65045.74,260182.96,UGX,Card,False,POS
+T0000008,2025-02-17,2025-02,2025,C02590,P00818,Household Pack,Household,ST15,Kabalagala,Kampala,POS,5,64652.89,323264.45,UGX,Cash,False,POS
+T0000009,2025-04-04,2025-04,2025,C04972,P00740,Electronics Pack,Electronics,ST03,Jinja,Jinja,POS,2,68957.65,137915.30,UGX,Cash,False,POS
+T0000010,2025-06-01,2025-06,2025,C04145,P00522,Return Item,Beverages,ST11,Masaka,Masaka,POS,-2,22190.50,-44381.00,UGX,Card,True,POS

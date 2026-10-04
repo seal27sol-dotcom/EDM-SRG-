@@ -1,0 +1,15 @@
+flowchart LR
+  Customer[Customer] -->|places| Order[Sales order]
+  Customer -->|may enrol| Loyalty[Loyalty account]
+  Order -->|contains| Line[Order line]
+  Product[Product] -->|sold as| Line
+  Store[Store] -->|fulfills| Order
+  Order -->|settled by| Payment[Payment]
+  Supplier[Supplier] -->|supplies| SupplierProduct[Supplier product]
+  Product -->|sourced as| SupplierProduct
+
+  Customer --> C1[Enterprise customer ID]
+  Product --> P1[SKU and category]
+  Store --> S1[Store district]
+  Order --> O1[Order date and channel]
+  Payment --> Pay1[Method and currency]
